@@ -1,0 +1,715 @@
+characters = {
+	ah_astolfo = {
+		name = ah_astolfo
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_astolfo"
+				large = "gfx/leaders/traps/astolfo.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/traps/astolfo.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				cavalry_leader
+				cavalry_expert
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_hideri_kanzaki = {
+		name = ah_hideri_kanzaki
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_hideri_kanzaki"
+				large = "gfx/leaders/traps/hideri_kanzaki.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/traps/hideri_kanzaki.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_hideri_kanzaki
+			cost = 150
+			traits = {
+				popular_figurehead
+			}
+		}
+	}
+	ah_tetora = {
+		name = ah_tetora
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_tetora"
+				large = "gfx/leaders/traps/tetora.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/traps/tetora.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_ringo_tsukimiya = {
+		name = ah_ringo_tsukimiya
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_ringo_tsukimiya"
+				large = "gfx/leaders/traps/ringo_tsukimiya.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/traps/ringo_tsukimiya.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_felix_argyle = {
+		name = ah_felix_argyle
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_felix_argyle"
+			}
+			army = {
+				large = "gfx/leaders/traps/felix_argyle.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				trait_engineer
+				desert_fox
+				swamp_fox
+				trait_mountaineer
+				hill_fighter
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = ah_felix_argyle
+			cost = 50
+			traits = {
+				military_theorist
+			}
+		}
+	}
+	ah_oboro_tsukimigusa = {
+		name = ah_oboro_tsukimigusa
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_oboro_tsukimigusa"
+			}
+			army = {
+				large = "gfx/leaders/traps/oboro_tsukimigusa.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_oboro_tsukimigusa
+			cost = 150
+			traits = {
+				war_industrialist
+			}
+		}
+	}
+	ah_hitoshi_sugoroku = {
+		name = ah_hitoshi_sugoroku
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_hitoshi_sugoroku"
+			}
+			army = {
+				large = "gfx/leaders/traps/hitoshi_sugoroku.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trickster
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	ah_kaoru_hanase = {
+		name = ah_kaoru_hanase
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_kaoru_hanase"
+			}
+			army = {
+				large = "gfx/leaders/traps/kaoru_hanase.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_kaoru_hanase
+			cost = 150
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+	ah_aoi_hyoudou = {
+		name = ah_aoi_hyoudou
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_aoi_hyoudou"
+			}
+			army = {
+				large = "gfx/leaders/traps/aoi_hyoudou.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ah_kaguya_arikawa = {
+		name = ah_kaguya_arikawa
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_kaguya_arikawa"
+			}
+			army = {
+				large = "gfx/leaders/traps/kaguya_arikawa.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_tama_kyan = {
+		name = ah_tama_kyan
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_tama_kyan"
+			}
+			army = {
+				large = "gfx/leaders/traps/tama_kyan.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_tama_kyan
+			cost = 150
+			traits = {
+				democratic_reformer
+			}
+		}
+	}
+	ah_hime_arikawa = {
+		name = ah_hime_arikawa
+		portraits = {
+			army = {
+				small = GFX_idea_ah_hime_arikawa
+				large = "gfx/leaders/traps/hime_arikawa.dds"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = -1
+		}
+	}
+	ah_sylvia = {
+		name = ah_sylvia
+		portraits = {
+			army = {
+				small = GFX_idea_ah_sylvia
+				large = "gfx/leaders/traps/sylvia.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = ah_sylvia
+			cost = 100
+			traits = {
+				rocket_scientist
+			}
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+	}
+	ah_birdy_cephon_altera = {
+		name = ah_birdy_cephon_altera
+		portraits = {
+			army = {
+				small = GFX_idea_ah_birdy_cephon_altera
+				large = "gfx/leaders/traps/birdy_cephon_altera.dds"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	ah_souji_mitsuka = {
+		name = ah_souji_mitsuka
+		portraits = {
+			army = {
+				small = GFX_idea_ah_souji_mitsuka
+				large = "gfx/leaders/traps/souji_mitsuka.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_ranga = {
+		name = ah_ranga
+		portraits = {
+			army = {
+				small = GFX_idea_ah_ranga
+				large = "gfx/leaders/traps/ranga.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_yukikaze = {
+		name = ah_yukikaze
+		portraits = {
+			army = {
+				small = GFX_idea_ah_yukikaze
+				large = "gfx/leaders/traps/yukikaze.dds"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = -1
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ah_yukikaze
+			cost = 150
+			allowed = {
+				original_tag = TRP
+			}
+			traits = {
+				air_chief_ground_support_3
+			}
+		}
+	}
+	ah_mitsunaga_oda = {
+		name = ah_mitsunaga_oda
+		portraits = {
+			army = {
+				small = GFX_idea_ah_mitsunaga_oda
+				large = "gfx/leaders/traps/mitsunaga_oda.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_ritsu_souma = {
+		name = ah_ritsu_souma
+		portraits = {
+			army = {
+				small = GFX_idea_ah_ritsu_souma
+				large = "gfx/leaders/traps/ritsu_souma.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_xianming_lin = {
+		name = ah_xianming_lin
+		portraits = {
+			army = {
+				small = GFX_idea_ah_xianming_lin
+				large = "gfx/leaders/traps/xianming_lin.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando infantry_leader
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = -1
+		}
+	}
+	ah_mizuho_miyanokouji = {
+		name = ah_mizuho_miyanokouji
+		portraits = {
+			army = {
+				small = GFX_idea_ah_mizuho_miyanokouji
+				large = "gfx/leaders/traps/mizuho_miyanokouji.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_youta_tsunashi = {
+		name = ah_youta_tsunashi
+		portraits = {
+			army = {
+				small = GFX_idea_ah_youta_tsunashi
+				large = "gfx/leaders/traps/youta_tsunashi.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ah_fish_eye = {
+		name = ah_fish_eye
+		portraits = {
+			army = {
+				small = GFX_idea_ah_fish_eye
+				large = "gfx/leaders/traps/fish_eye.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				cavalry_officer
+				#cavalry_leader
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_hacka_doll_no_3 = {
+		name = ah_hacka_doll_no_3
+		portraits = {
+			army = {
+				small = GFX_idea_ah_hacka_doll_no_3
+				large = "gfx/leaders/traps/hacka_doll_3.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_ranma_saotome = {
+		name = ah_ranma_saotome
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_ranma_saotome"
+				large = "gfx/leaders/traps/ranma_saotome.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				old_guard
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_hamaji_yakumo = {
+		name = ah_hamaji_yakumo
+		portraits = {
+			army = {
+				small = GFX_idea_ah_hamaji_yakumo
+				large = "gfx/leaders/traps/hamaji_yakumo.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				naval_lineage
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_taroumaru_seike = {
+		name = ah_taroumaru_seike
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_taroumaru_seike"
+				large = "gfx/leaders/traps/taroumaru_seike.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				naval_liason
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			maneuvering_skill = 5
+			coordination_skill = 5
+			legacy_id = -1
+		}
+	}
+	ah_mariya_shidou = {
+		name = ah_mariya_shidou
+		portraits = {
+			army = {
+				small = GFX_idea_ah_mariya_shidou
+				large = "gfx/leaders/traps/mariya_shidou.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				navy_media_personality
+				naval_invader
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_russell = {
+		name = ah_russell
+		portraits = {
+			army = {
+				small = GFX_idea_ah_russell
+				large = "gfx/leaders/traps/russell.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				navy_career_officer
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_mare_bello_fiore = {
+		name = ah_mare_bello_fiore
+		portraits = {
+			army = {
+				small = GFX_idea_ah_mare_bello_fiore
+			}
+			civilian = {
+				large = "gfx/leaders/traps/mare_bello_fiore.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_mare_bello_fiore
+			cost = 50
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	ah_aoi_futaba = {
+		name = ah_aoi_futaba
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_aoi_futaba"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_aoi_futaba
+			cost = 50
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				head_of_intelligence
+			}
+		}
+	}
+	ah_gasper_vladi = {
+		name = ah_gasper_vladi
+		portraits = {
+			army = {
+				small = GFX_idea_ah_gasper_vladi
+				large = "gfx/leaders/traps/gasper_vladi.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_ryou_akizuki = {
+		name = ah_ryou_akizuki
+		portraits = {
+			army = {
+				small = GFX_idea_ah_ryou_akizuki
+				large = "gfx/leaders/traps/ryou_akizuki.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_saki_mizushima = {
+		name = ah_saki_mizushima
+		portraits = {
+			army = {
+				small = GFX_idea_ah_saki_mizushima
+				large = "gfx/leaders/traps/saki_mizushima.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+}

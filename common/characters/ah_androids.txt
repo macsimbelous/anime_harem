@@ -1,0 +1,733 @@
+characters = {
+	ah_kos_mos = {
+		name = ah_kos_mos
+		portraits = {
+			army = {
+				small = GFX_idea_ah_kos_mos
+				large = "gfx/leaders/androids/kos-mos.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/androids/kos-mos.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				bearer_of_artillery
+				defensive_doctrine
+				unyielding_defender
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	ah_fiora_mechon = {
+		name = ah_fiora_mechon
+		portraits = {
+			army = {
+				small = GFX_idea_ah_fiora_mechon
+				large = "gfx/leaders/androids/fiora_mechon.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/androids/fiora_mechon.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_mythra = {
+		name = ah_mythra
+		portraits = {
+			army = {
+				small = GFX_idea_ah_mythra
+				large = "gfx/leaders/androids/mythra.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/androids/mythra.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_histoire = {
+		name = ah_histoire
+		portraits = {
+			army = {
+				small = GFX_idea_ah_histoire
+				large = "gfx/leaders/androids/histoire.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/androids/histoire.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_hiei_arp
+			cost = 150
+			traits = {
+				silent_workhorse
+			}
+		}
+	}
+	ah_alisa_boskonovich = {
+		name = ah_alisa_boskonovich
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_alisa_boskonovich"
+			}
+			army = {
+				large = "gfx/leaders/androids/alisa_boskonovich.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ah_risa_android = {
+		name = ah_risa_android
+		portraits = {
+			army = {
+				small = GFX_idea_ah_risa_android
+				large = "gfx/leaders/androids/risa_android.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+				aggressive_assaulter
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = -1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_risa
+			cost = 150
+			traits = {
+				princess_of_terror
+			}
+			modifier = {
+				compliance_growth = 0.15
+			}
+		}
+	}
+	ah_2b = {
+		name = ah_2b
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_2b"
+				large = "gfx/leaders/androids/2b.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				offensive_doctrine bearer_of_artillery
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_cibo = {
+		name = ah_cibo
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_cibo"
+			}
+			army = {
+				large = "gfx/leaders/androids/cibo.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_a2 = {
+		name = ah_a2
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_a2"
+				large = "gfx/leaders/androids/a2.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_edi = {
+		name = ah_edi
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_edi"
+				large = "gfx/leaders/androids/edi.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_pyra = {
+		name = ah_pyra
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_pyra"
+				large = "gfx/leaders/androids/pyra.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_leader
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = -1
+		}
+	}
+	ah_rozen_s_series = {
+		name = ah_rozen_s_series
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_rozen_s_series"
+				large = "gfx/leaders/androids/rozen_s_series.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = -1
+		}
+	}
+	ah_clarion = {
+		name = ah_clarion
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_clarion"
+				large = "gfx/leaders/androids/clarion.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				logistics_wizard logistics_skill
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+	ah_pneuma = {
+		name = ah_pneuma
+		portraits = {
+			army = {
+				small = GFX_idea_ah_pneuma
+				large = "gfx/leaders/androids/pneuma.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_hatsune_miku = {
+		name = ah_hatsune_miku
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_hatsune_miku"
+				large = "gfx/leaders/androids/hatsune_miku.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ah_hana = {
+		name = ah_hana
+		portraits = {
+			army = {
+				small = GFX_idea_ah_hana
+				large = "gfx/leaders/androids/hana.dds"
+			}
+		}
+		corps_commander = {
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+			legacy_id = -1
+		}
+	}
+	ah_automaton = {
+		name = ah_automaton
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_automaton"
+				large = "gfx/leaders/androids/automaton.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_phantom_queen_ex_xecty = {
+		name = ah_phantom_queen_ex_xecty
+		portraits = {
+			army = {
+				small = GFX_idea_ah_phantom_queen_ex_xecty
+				large = "gfx/leaders/androids/phantom_queen_ex-xecty.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_mhmd_02_haruko = {
+		name = ah_mhmd_02_haruko
+		portraits = {
+			army = {
+				small = GFX_idea_ah_mhmd_02_haruko
+				large = "gfx/leaders/androids/mhmd-02_haruko.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				logistics_wizard logistics_skill
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_t_elos = {
+		name = ah_t_elos
+		portraits = {
+			army = {
+				small = GFX_idea_ah_t_elos
+				large = "gfx/leaders/androids/t-elos.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				aggressive_assaulter
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ah_aino = {
+		name = ah_aino
+		portraits = {
+			army = {
+				small = GFX_idea_ah_aino
+				large = "gfx/leaders/androids/aino.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ah_rose = {
+		name = ah_rose
+		portraits = {
+			army = {
+				small = GFX_idea_ah_rose
+				large = "gfx/leaders/androids/rose.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ah_elizabeth = {
+		name = ah_elizabeth
+		portraits = {
+			army = {
+				small = GFX_idea_ah_elizabeth
+				large = "gfx/leaders/androids/elizabeth.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ah_vivy = {
+		name = ah_vivy
+		portraits = {
+			army = {
+				small = GFX_idea_ah_vivy
+				large = "gfx/leaders/androids/vivy.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+	ah_ashigara_arp = {
+		name = ah_ashigara_arp
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_ashigara_arp"
+				large = "gfx/leaders/androids/ashigara_arp.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_takao_arp = {
+		name = ah_takao_arp
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_takao_arp"
+				large = "gfx/leaders/androids/takao_arp.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ah_takao_arp
+			cost = 50
+			traits = {
+				navy_anti_submarine_1
+			}
+		}
+		navy_leader = {
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			maneuvering_skill = 5
+			coordination_skill = 5
+			legacy_id = -1
+		}
+	}
+	ah_i_410 = {
+		name = ah_i_410
+		portraits = {
+			army = {
+				small = GFX_idea_ah_i_410
+				large = "gfx/leaders/androids/i-410.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				silent_hunter
+				torpedo_expert
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ah_i_410
+			ledger = navy
+			cost = 150
+			traits = {
+				submarine_specialist
+			}
+		}
+	}
+	ah_haruna = {
+		name = ah_haruna
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_haruna"
+				large = "gfx/leaders/androids/haruna.dds"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_kirishima = {
+		name = ah_kirishima
+		portraits = {
+			army = {
+				small = GFX_idea_ah_kirishima
+				large = "gfx/leaders/androids/kirishima.dds"
+			}
+		}
+		navy_leader = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_kongou_arp = {
+		name = ah_kongou_arp
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_kongou_arp"
+				large = "gfx/leaders/androids/kongou_arp.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_atago_arp = {
+		name = ah_atago_arp
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_atago_arp"
+				large = "gfx/leaders/androids/atago_arp.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_caseal = {
+		name = ah_caseal
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_caseal"
+				large = "gfx/leaders/androids/caseal.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_hiei_arp = {
+		name = ah_hiei_arp
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_hiei_arp"
+				large = "gfx/leaders/androids/hiei_arp.dds"
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_yurizaki_mira = {
+		name = ah_yurizaki_mira
+		portraits = {
+			army = {
+				small = GFX_idea_ah_yurizaki_mira
+				large = "gfx/leaders/androids/yurizaki_mira.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_yurizaki_mira
+			cost = 150
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				head_of_intelligence
+			}
+		}
+	}
+	ah_mei_fang = {
+		name = ah_mei_fang
+		portraits = {
+			army = {
+				small = GFX_idea_ah_mei_fang
+				large = "gfx/leaders/androids/mei-fang.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_aegis = {
+		name = ah_aegis
+		portraits = {
+			army = {
+				small = GFX_idea_ah_aegis
+				large = "gfx/leaders/androids/aegis.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_chii = {
+		name = ah_chii
+		portraits = {
+			army = {
+				small = GFX_idea_ah_chii
+				large = "gfx/leaders/androids/chii.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+}

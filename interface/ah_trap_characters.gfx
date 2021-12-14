@@ -1,0 +1,169 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_ah_aoi_futaba"
+		texturefile = "gfx/leaders/traps/aoi_futaba_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_aoi_hyoudou"
+		texturefile = "gfx/leaders/traps/aoi_hyoudou_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_astolfo"
+		texturefile = "gfx/leaders/traps/astolfo_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_birdy_cephon_altera"
+		texturefile = "gfx/leaders/traps/birdy_cephon_altera_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_felix_argyle"
+		texturefile = "gfx/leaders/traps/felix_argyle_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_fish_eye"
+		texturefile = "gfx/leaders/traps/fish_eye_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_gasper_vladi"
+		texturefile = "gfx/leaders/traps/gasper_vladi_idea.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_ah_hacka_doll_no_3"
+		texturefile = "gfx/leaders/traps/hacka_doll_3_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_hamaji_yakumo"
+		texturefile = "gfx/leaders/traps/hamaji_yakumo_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_hideri_kanzaki"
+		texturefile = "gfx/leaders/traps/hideri_kanzaki_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_hime_arikawa"
+		texturefile = "gfx/leaders/traps/hime_arikawa_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_hitoshi_sugoroku"
+		texturefile = "gfx/leaders/traps/hitoshi_sugoroku_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_kaguya_arikawa"
+		texturefile = "gfx/leaders/traps/kaguya_arikawa_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_kaoru_hanase"
+		texturefile = "gfx/leaders/traps/kaoru_hanase_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_mariya_shidou"
+		texturefile = "gfx/leaders/traps/mariya_shidou_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_mitsunaga_oda"
+		texturefile = "gfx/leaders/traps/mitsunaga_oda_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_mizuho_miyanokouji"
+		texturefile = "gfx/leaders/traps/mizuho_miyanokouji_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_oboro_tsukimigusa"
+		texturefile = "gfx/leaders/traps/oboro_tsukimigusa_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_ranga"
+		texturefile = "gfx/leaders/traps/ranga_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_ranma_saotome"
+		texturefile = "gfx/leaders/traps/ranma_saotome_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_ringo_tsukimiya"
+		texturefile = "gfx/leaders/traps/ringo_tsukimiya_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_ritsu_souma"
+		texturefile = "gfx/leaders/traps/ritsu_souma_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_russell"
+		texturefile = "gfx/leaders/traps/russell_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_ryou_akizuki"
+		texturefile = "gfx/leaders/traps/ryou_akizuki_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_saki_mizushima"
+		texturefile = "gfx/leaders/traps/saki_mizushima_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_souji_mitsuka"
+		texturefile = "gfx/leaders/traps/souji_mitsuka_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_sylvia"
+		texturefile = "gfx/leaders/traps/sylvia_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_tama_kyan"
+		texturefile = "gfx/leaders/traps/tama_kyan_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_taroumaru_seike"
+		texturefile = "gfx/leaders/traps/taroumaru_seike_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_tetora"
+		texturefile = "gfx/leaders/traps/tetora_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_xianming_lin"
+		texturefile = "gfx/leaders/traps/xianming_lin_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_youta_tsunashi"
+		texturefile = "gfx/leaders/traps/youta_tsunashi_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_yukikaze"
+		texturefile = "gfx/leaders/traps/yukikaze_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_mare_bello_fiore"
+		texturefile = "gfx/leaders/traps/mare_bello_fiore_idea.dds"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

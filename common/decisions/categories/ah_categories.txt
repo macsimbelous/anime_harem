@@ -1,0 +1,27 @@
+ah_harem_category = {
+	priority = 20
+	allowed = {
+		is_ai = no
+	}
+}
+ah_take_girls_category = {
+	priority = 19
+	visible = {
+		has_country_flag = ah_harem_created_flag
+	}
+}
+ah_take_androids_category = {
+	priority = 19
+	visible = {
+		has_country_flag = ah_harem_created_flag
+	}
+}
+ah_take_traps_category = {
+	priority = 18
+	visible = {
+		has_country_flag = ah_harem_created_flag
+		NOT = {
+			has_country_flag = ah_traps_ban_flag
+		}
+	}
+}

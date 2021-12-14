@@ -1,0 +1,18 @@
+﻿l_russian:
+#ah_harem_category
+ ah_harem_category:0 "Гарем"
+ ah_harem_category_desc:0 "Максимальный размер: §G[?ah_harem_limit]§!\nТекуший рамер: §G[?ah_harem_size]§!"
+ ah_create_harem:0 "Создать гарем"
+ ah_expand_harem:0 "Расширить гарем"
+ ah_traps_ban:0 "Никаких трапов"
+
+#ah_take_girls_category
+ ah_take_girls_category:0 "Девушки"
+
+#ah_take_androids_category
+ ah_take_androids_category:0 "Девушки андроиды"
+
+
+ ah_take_traps_category:0 "Трапы"
+
+

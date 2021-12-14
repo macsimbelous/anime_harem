@@ -1,0 +1,1766 @@
+characters = {
+	ah_erza = {
+		name = ah_erza
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/girls/erza.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/erza.dds"
+				small = GFX_idea_ah_erza
+			}
+		}
+		field_marshal = {
+			traits = {
+				expert_delegator
+				war_hero
+				fast_planner
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+	ah_asuka = {
+		name = ah_asuka
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/girls/asuka_lider.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/asuka.dds"
+				small = "gfx/leaders/girls/asuka_idea.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				panzer_leader
+				aggressive_assaulter
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	ah_aurora_suya_rhys_kaymin = {
+		name = ah_aurora_suya_rhys_kaymin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/girls/aurora_suya_rhys_kaymin.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/aurora_suya_rhys_kaymin.dds"
+				small = "gfx/leaders/girls/aurora_suya_rhys_kaymin_idea.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	ah_anastasia = {
+		name = ah_anastasia
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/girls/anastasia.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/anastasia_general.dds"
+				small = "gfx/leaders/girls/anastasia_general_idea.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				logistics_wizard
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+	ah_lightning = {
+		name = ah_lightning
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/lightning_idea.dds"
+				large = "gfx/leaders/girls/lightning.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = ah_lightning
+			cost = 150
+			traits = {
+				blitzkrieg_theorist
+			}
+		}
+		field_marshal = {
+			traits = {
+				commando
+				offensive_doctrine
+				war_hero
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	ah_mamako_oosuki = {
+		name = ah_mamako_oosuki
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/mamako_oosuki_idea.dds"
+				large = "gfx/leaders/girls/mamako_oosuki.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				infantry_expert
+				offensive_doctrine
+				logistics_skill
+				logistics_wizard
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	ah_anastasia_romanova = {
+		name = ah_anastasia_romanova
+		portraits = {
+			army = {
+				small = GFX_idea_ah_anastasia_romanova
+				large = "gfx/leaders/girls/anastasia_romanova.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/girls/anastasia_romanova.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}                                                                                      
+	ah_saint_martha = {
+		name = ah_saint_martha
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/saint_martha_idea.dds"
+				large = "gfx/leaders/girls/saint_martha.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_nishizumi_miho = {
+		name = ah_nishizumi_miho
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/nishizumi_miho_idea.dds"
+				large = "gfx/leaders/girls/nishizumi_miho.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	ah_asuna_yuuki = {
+		name = ah_asuna_yuuki
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/asuna_yuuki_idea.dds"
+				large = "gfx/leaders/girls/asuna_yuuki.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				war_hero
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 6
+		}
+	}
+	ah_mash_kyrielight = {
+		name = ah_mash_kyrielight
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/mash_kyrielight_idea.dds"
+				large = "gfx/leaders/girls/mash_kyrielight.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				defensive_doctrine
+				unyielding_defender
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 6
+		}
+	}
+	ah_maple = {
+		name = ah_maple
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/maple_idea.dds"
+				large = "gfx/leaders/girls/maple.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trickster
+				skilled_staffer
+				unyielding_defender
+				defense_skill
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	ah_yoko_littner = {
+		name = ah_yoko_littner
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/yoko_littner_idea.dds"
+				large = "gfx/leaders/girls/yoko_littner.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				organizer
+				fast_planner
+				panzer_leader
+				panzer_expert
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	ah_kallen_stadtfeld = {
+		name = ah_kallen_stadtfeld
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/kallen_stadtfeld_idea.dds"
+				large = "gfx/leaders/girls/kallen_stadtfeld.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	ah_saki_rukino = {
+		name = ah_saki_rukino
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/saki_rukino_idea.dds"
+				large = "gfx/leaders/girls/saki_rukino.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				panzer_leader
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_kurumi_tokisaki = {
+		name = ah_kurumi_tokisaki
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/kurumi_tokisaki_idea.dds"
+				large = "gfx/leaders/girls/kurumi_tokisaki.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trickster
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_sanya_v_litvyak = {
+		name = ah_sanya_v_litvyak
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/sanya_v_litvyak_idea.dds"
+				large = "gfx/leaders/girls/sanya_v_litvyak.dds"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ah_sanya_v_litvyak
+			cost = 150
+
+			traits = {
+				air_chief_night_operations_3
+			}
+		}
+	}
+	ah_isuzu_sento = {
+		name = ah_isuzu_sento
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/isuzu_sento_idea.dds"
+				large = "gfx/leaders/girls/isuzu_sento.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+				infantry_leader
+			}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	ah_volemia = {
+		name = ah_volemia
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/volemia_idea.dds"
+				large = "gfx/leaders/girls/volemia.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_leader
+			}
+			skill = 1
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	ah_camilla = {
+		name = ah_camilla
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/camilla_idea.dds"
+				large = "gfx/leaders/girls/camilla.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				cavalry_leader
+				cavalry_expert
+			}
+			skill = 1
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	ah_sinon = {
+		name = ah_sinon
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/sinon_idea.dds"
+				large = "gfx/leaders/girls/sinon.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				#skilled_staffer
+				trait_mountaineer
+				adaptable
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_kaname_chidori = {
+		name = ah_kaname_chidori
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/kaname_chidori_idea.dds"
+				large = "gfx/leaders/girls/kaname_chidori.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				commando
+				infantry_leader
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_yoshiko_tsushima = {
+		name = ah_yoshiko_tsushima
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/yoshiko_tsushima_idea.dds"
+				large = "gfx/leaders/girls/yoshiko_tsushima.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_ranko_kanzaki = {
+		name = ah_ranko_kanzaki
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/ranko_kanzaki_idea.dds"
+				large = "gfx/leaders/girls/ranko_kanzaki.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	ah_elma = {
+		name = ah_elma
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/elma_idea.dds"
+				large = "gfx/leaders/girls/elma.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	ah_ako_tamaki = {
+		name = ah_ako_tamaki
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/ako_tamaki_idea.dds"
+				large = "gfx/leaders/girls/ako_tamaki.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_celica = {
+		name = ah_celica
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/celica_idea.dds"
+				large = "gfx/leaders/girls/celica.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_cryska_barchenowa = {
+		name = ah_cryska_barchenowa
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/cryska_barchenowa_idea.dds"
+				large = "gfx/leaders/girls/cryska_barchenowa.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_fiora = {
+		name = ah_fiora
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/fiora_idea.dds"
+				large = "gfx/leaders/girls/fiora.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_haruhi_suzumiya = {
+		name = ah_haruhi_suzumiya
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/haruhi_suzumiya_idea.dds"
+				large = "gfx/leaders/girls/haruhi_suzumiya.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_kiana_kaslana = {
+		name = ah_kiana_kaslana
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/kiana_kaslana_idea.dds"
+				large = "gfx/leaders/girls/kiana_kaslana.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_konoko = {
+		name = ah_konoko
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/konoko_idea.dds"
+				large = "gfx/leaders/girls/konoko.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_lina_inverse = {
+		name = ah_lina_inverse
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/lina_inverse_idea.dds"
+				large = "gfx/leaders/girls/lina_inverse.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				bearer_of_artillery
+				aggressive_assaulter
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = ah_lina_inverse
+			cost = 150
+
+			traits = {
+				superior_firepower_expert
+			}
+		}
+	}
+	ah_neptune = {
+		name = ah_neptune
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/neptune_idea.dds"
+				large = "gfx/leaders/girls/neptune.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_ryuuko_matoi = {
+		name = ah_ryuuko_matoi
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/ryuuko_matoi_idea.dds"
+				large = "gfx/leaders/girls/ryuuko_matoi.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				aggressive_assaulter
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = ah_ryuuko_matoi
+			cost = 150
+
+			traits = {
+				mass_assault_expert
+			}
+		}
+	}
+	ah_satellizer_el_bridget = {
+		name = ah_satellizer_el_bridget
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/satellizer_el_bridget_idea.dds"
+				large = "gfx/leaders/girls/satellizer_el_bridget.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_siluca_meletes = {
+		name = ah_siluca_meletes
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/siluca_meletes_idea.dds"
+				large = "gfx/leaders/girls/siluca_meletes.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = theorist
+			ledger = navy
+			idea_token = ah_siluca_meletes
+			cost = 150
+
+			traits = {
+				grand_battle_plan_expert
+			}
+		}
+	}
+	ah_yuno_gasai = {
+		name = ah_yuno_gasai
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/yuno_gasai_idea.dds"
+				large = "gfx/leaders/girls/yuno_gasai.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				offensive_skill
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+		}
+	}
+	ah_byleth_eisner = {
+		name = ah_byleth_eisner
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/byleth_eisner_idea.dds"
+				large = "gfx/leaders/girls/byleth_eisner.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_eula = {
+		name = ah_eula
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/eula_idea.dds"
+				large = "gfx/leaders/girls/eula.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_5pb = {
+		name = ah_5pb
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/5pb_idea.dds"
+				large = "gfx/leaders/girls/5pb.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				cavalry_leader
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ah_blanc = {
+		name = ah_blanc
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/blanc_idea.dds"
+				large = "gfx/leaders/girls/blanc.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_compa = {
+		name = ah_compa
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/compa_idea.dds"
+				large = "gfx/leaders/girls/compa.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				logistics_skill
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 6
+		}
+	}
+	ah_djeeta = {
+		name = ah_djeeta
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/djeeta_idea.dds"
+				large = "gfx/leaders/girls/djeeta.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_ellis = {
+		name = ah_ellis
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/ellis_idea.dds"
+				large = "gfx/leaders/girls/ellis.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_escha_malier = {
+		name = ah_escha_malier
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/escha_malier_idea.dds"
+				large = "gfx/leaders/girls/escha_malier.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_fujimaru_ritsuka = {
+		name = ah_fujimaru_ritsuka
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/fujimaru_ritsuka_idea.dds"
+				large = "gfx/leaders/girls/fujimaru_ritsuka.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_honoka_kousaka = {
+		name = ah_honoka_kousaka
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/honoka_kousaka_idea.dds"
+				large = "gfx/leaders/girls/honoka_kousaka.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_if = {
+		name = ah_if
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/if_idea.dds"
+				large = "gfx/leaders/girls/if.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_kasumi = {
+		name = ah_kasumi
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/kasumi_idea.dds"
+				large = "gfx/leaders/girls/kasumi.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_merurulince_rede_arls = {
+		name = ah_merurulince_rede_arls
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/merurulince_rede_arls_idea.dds"
+				large = "gfx/leaders/girls/merurulince_rede_arls.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_miho_nishizumi = {
+		name = ah_miho_nishizumi
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/miho_nishizumi_idea.dds"
+				large = "gfx/leaders/girls/miho_nishizumi.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_misato_katsuragi = {
+		name = ah_misato_katsuragi
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/misato_katsuragi_idea.dds"
+				large = "gfx/leaders/girls/misato_katsuragi.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_naru_narusegawa = {
+		name = ah_naru_narusegawa
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/naru_narusegawa_idea.dds"
+				large = "gfx/leaders/girls/naru_narusegawa.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_noire = {
+		name = ah_noire
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/noire_idea.dds"
+				large = "gfx/leaders/girls/noire.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_rei_ayanami = {
+		name = ah_rei_ayanami
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/rei_ayanami_idea.dds"
+				large = "gfx/leaders/girls/rei_ayanami.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_ryza = {
+		name = ah_ryza
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/ryza_idea.dds"
+				large = "gfx/leaders/girls/ryza.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_selesia_upitiria = {
+		name = ah_selesia_upitiria
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/selesia_upitiria_idea.dds"
+				large = "gfx/leaders/girls/selesia_upitiria.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+		}
+		advisor = {
+			slot = theorist
+			ledger = air
+			idea_token = ah_selesia_upitiria
+			cost = 50
+			traits = {
+				air_warfare_theorist
+			}
+		}
+	}
+	ah_sophie_neuenmuller = {
+		name = ah_sophie_neuenmuller
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/sophie_neuenmuller_idea.dds"
+				large = "gfx/leaders/girls/sophie_neuenmuller.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_vert = {
+		name = ah_vert
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/vert_idea.dds"
+				large = "gfx/leaders/girls/vert.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_yukina_himeragi = {
+		name = ah_yukina_himeragi
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/yukina_himeragi_idea.dds"
+				large = "gfx/leaders/girls/yukina_himeragi.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_yuna = {
+		name = ah_yuna
+		portraits = {
+			army = {
+				small = "gfx/leaders/girls/yuna_idea.dds"
+				large = "gfx/leaders/girls/yuna.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ah_noelle = {
+		name = ah_noelle
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_noelle"
+				large = "gfx/leaders/girls/noelle.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		corps_commander = {
+			traits = {
+				unyielding_defender defense_skill
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ah_eruza_guranhirute = {
+		name = ah_eruza_guranhirute
+		portraits = {
+			army = {
+				small = GFX_idea_ah_eruza_guranhirute
+				large = "gfx/leaders/girls/eruza_guranhirute.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_eruza_guranhirute
+			cost = 150
+			traits = {
+				princess_of_terror
+			}
+			modifier = {
+				compliance_growth = 0.15
+			}
+		}
+		corps_commander = {
+			traits = {
+				offensive_doctrine offensive_skill
+			}
+			skill = 2
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ah_aoi_sakurai = {
+		name = ah_aoi_sakurai
+		portraits = {
+			army = {
+				small = GFX_idea_ah_aoi_sakurai
+				large = "gfx/leaders/girls/lucy_yamagami.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		corps_commander = {
+			traits = {
+				logistics_skill logistics_wizard
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	ah_yamato_kancol = {
+		name = ah_yamato_kancol
+		portraits = {
+			navy = {
+				small = GFX_idea_ah_yamato_kancol
+				large = "gfx/leaders/girls/yamato_kancol.dds"
+			}
+			army = {
+				small = GFX_idea_ah_yamato_kancol
+				large = "gfx/leaders/girls/yamato_kancol.dds"
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = ah_yamato_kancol
+			ledger = navy
+			traits = {
+				grand_fleet_proponent
+			}
+		}
+		navy_leader = {
+			traits = {
+				bold
+				navy_career_officer
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 6
+			maneuvering_skill = 4
+			coordination_skill = 5
+		}
+	}
+	ah_atago_azur_lane = {
+		name = ah_atago_azur_lane
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/atago_azur_lane_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/atago_azur_lane.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	ah_avrora_azur_lane = {
+		name = ah_avrora_azur_lane
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/avrora_azur_lane_idea.dds"
+				large = "gfx/leaders/girls/avrora_azur_lane.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			maneuvering_skill = 5
+			coordination_skill = 6
+		}
+	}
+	ah_belfast = {
+		name = ah_belfast
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/belfast_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/belfast.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	ah_marblehead = {
+		name = ah_marblehead
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/marblehead_azur_lane_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/marblehead_Azur_Lane.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				caustic_personality
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			maneuvering_skill = 5
+			coordination_skill = 5
+		}
+	}
+	ah_saint_louis_azur_lane = {
+		name = ah_saint_louis_azur_lane
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/saint_louis_azur_lane_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/saint_louis_azur_lane.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	ah_takao_azur_lane = {
+		name = ah_takao_azur_lane
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/takao_azur_lane_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/takao_azur_lane.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	ah_tosa_azur_lane = {
+		name = ah_tosa_azur_lane
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/tosa_azur_lane_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/tosa_azur_lane.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	ah_sovetskaya_rossiya = {
+		name = ah_sovetskaya_rossiya
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/sovetskaya_rossiya_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/sovetskaya_rossiya.dds"
+				small = "gfx/leaders/girls/sovetskaya_rossiya_idea.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	ah_shima_tateishi = {
+		name = ah_shima_tateishi
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/shima_tateishi_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/shima_tateishi.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	ah_akeno_misaki = {
+		name = ah_akeno_misaki
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/akeno_misaki_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/akeno_misaki.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+	}
+	ah_beidou = {
+		name = ah_beidou
+		portraits = {
+			navy = {
+				small = "gfx/leaders/girls/beidou_idea.dds"
+			}
+			army = {
+				large = "gfx/leaders/girls/beidou.dds"
+			}
+		}
+		navy_leader = {
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			maneuvering_skill = 5
+			coordination_skill = 5
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ah_beidou
+			cost = 150
+			traits = {
+				navy_chief_commerce_raiding_1
+			}
+		}
+	}
+	#political advisors
+	ah_minami_nitta = {
+		name = ah_minami_nitta
+		portraits = {
+			army = {
+				small = GFX_idea_ah_minami_nitta
+			}
+			civilian = {
+				large = "gfx/leaders/girls/minami_nitta.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_minami_nitta
+			cost = 150
+			# available = {
+			# 	has_country_leader = {
+			# 		#name = "anastasia"
+			# 		character = ah_anastasia
+			# 		ruling_only = yes
+			# 	}
+			# }
+			traits = {
+				first_lady
+			}
+			ai_will_do = {
+				factor = 5
+			}
+		}
+	}
+
+	ah_ange_le_carre = {
+		name = ah_ange_le_carre
+		portraits = {
+			army = {
+				small = GFX_idea_ah_ange_le_carre
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_ange_le_carre
+			cost = 150
+			available = {
+				has_intelligence_agency = yes
+			}
+			traits = {
+				head_of_intelligence
+			}
+		}
+	}
+	ah_niko_yazawa = {
+		name = ah_niko_yazawa
+		portraits = {
+			army = {
+				small = GFX_idea_ah_niko_yazawa
+			}
+			civilian = {
+				large = "gfx/leaders/girls/niko_yazawa.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_niko_yazawa
+			cost = 150
+			traits = {
+				democratic_reformer
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	ah_mikumo_guynemer = {
+		name = ah_mikumo_guynemer
+		portraits = {
+			army = {
+				small = GFX_idea_ah_mikumo_guynemer
+			}
+			civilian = {
+				large = "gfx/leaders/girls/mikumo_guynemer.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_mikumo_guynemer
+			cost = 150
+			traits = {
+				propaganda_expert
+			}
+		}
+	}
+	ah_asuka_tanaka = {
+		name = ah_asuka_tanaka
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_asuka_tanaka"
+			}
+			civilian = {
+				large = "gfx/leaders/girls/asuka_tanaka.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_asuka_tanaka
+			cost = 150
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	ah_lucy_yamagami = {
+		name = ah_lucy_yamagami
+		portraits = {
+			army = {
+				small = GFX_idea_ah_lucy_yamagami
+			}
+			civilian = {
+				large = "gfx/leaders/girls/lucy_yamagami.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ah_lucy_yamagami
+			cost = 150
+			traits = {
+				war_industrialist
+			}
+		}
+	}
+	ah_megumin = {
+		name = ah_megumin
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_megumin"
+			}
+			civilian = {
+				large = "gfx/leaders/girls/megumin.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = ah_megumin
+			cost = 150
+			research_bonus = {
+				nuclear = 0.2
+			}
+			traits = {
+				nuclear_scientist
+			}
+		}
+	}
+	ah_ayame_himuro = {
+		name = ah_ayame_himuro
+		portraits = {
+			army = {
+				small = "GFX_idea_ah_ayame_himuro"
+			}
+			civilian = {
+				large = "gfx/leaders/girls/ayame_himuro.dds"
+			}
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = ah_ayame_himuro
+			cost = 100
+			traits = {
+				rocket_scientist
+			}
+			modifier = {
+				research_speed_factor = 0.15
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+}

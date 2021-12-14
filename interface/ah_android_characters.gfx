@@ -1,0 +1,158 @@
+spriteTypes = {
+        spriteType = {
+                name = "GFX_idea_ah_2b"
+                texturefile = "gfx/leaders/androids/2b_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_a2"
+                texturefile = "gfx/leaders/androids/a2_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_aegis"
+                texturefile = "gfx/leaders/androids/aegis_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_aino"
+                texturefile = "gfx/leaders/androids/aino_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_alisa_boskonovich"
+                texturefile = "gfx/leaders/androids/alisa_boskonovich_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_ashigara_arp"
+                texturefile = "gfx/leaders/androids/ashigara_arp_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_atago_arp"
+                texturefile = "gfx/leaders/androids/atago_arp_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_automaton"
+                texturefile = "gfx/leaders/androids/automaton_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_caseal"
+                texturefile = "gfx/leaders/androids/caseal_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_chii"
+                texturefile = "gfx/leaders/androids/chii_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_cibo"
+                texturefile = "gfx/leaders/androids/cibo_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_clarion"
+                texturefile = "gfx/leaders/androids/clarion_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_edi"
+                texturefile = "gfx/leaders/androids/edi_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_elizabeth"
+                texturefile = "gfx/leaders/androids/elizabeth_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_fiora_mechon"
+                texturefile = "gfx/leaders/androids/fiora_mechon_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_hana"
+                texturefile = "gfx/leaders/androids/hana_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_haruna"
+                texturefile = "gfx/leaders/androids/haruna_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_hatsune_miku"
+                texturefile = "gfx/leaders/androids/hatsune_miku_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_hiei_arp"
+                texturefile = "gfx/leaders/androids/hiei_arp_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_histoire"
+                texturefile = "gfx/leaders/androids/histoire_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_i_410"
+                texturefile = "gfx/leaders/androids/i-410_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_kirishima"
+                texturefile = "gfx/leaders/androids/kirishima_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_kongou_arp"
+                texturefile = "gfx/leaders/androids/kongou_arp_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_kos_mos"
+                texturefile = "gfx/leaders/androids/kos-mos_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_mei-fang"
+                texturefile = "gfx/leaders/androids/mei-fang_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_mhmd_02_haruko"
+                texturefile = "gfx/leaders/androids/mhmd-02_haruko_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_mythra"
+                texturefile = "gfx/leaders/androids/mythra_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_phantom_queen_ex_xecty"
+                texturefile = "gfx/leaders/androids/phantom_queen_ex-xecty_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_pneuma"
+                texturefile = "gfx/leaders/androids/pneuma_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_pyra"
+                texturefile = "gfx/leaders/androids/pyra_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_risa_android"
+                texturefile = "gfx/leaders/androids/risa_android_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_rose"
+                texturefile = "gfx/leaders/androids/rose_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_rozen_s_series"
+                texturefile = "gfx/leaders/androids/rozen_s_series_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_takao_arp"
+                texturefile = "gfx/leaders/androids/takao_arp_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_t_elos"
+                texturefile = "gfx/leaders/androids/t-elos_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_vanessa_diodati"
+                texturefile = "gfx/leaders/androids/vanessa_diodati_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_vivy"
+                texturefile = "gfx/leaders/androids/vivy_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_yurizaki_mira"
+                texturefile = "gfx/leaders/androids/yurizaki_mira_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_mei_fang"
+                texturefile = "gfx/leaders/androids/mei-fang_idea.dds"
+        }
+}
