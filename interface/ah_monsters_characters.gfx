@@ -1,0 +1,158 @@
+spriteTypes = {
+        spriteType = {
+                name = "GFX_idea_ah_arnice"
+                texturefile = "gfx/leaders/monsters/arnice_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_astaroth"
+                texturefile = "gfx/leaders/monsters/astaroth_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_belldandy"
+                texturefile = "gfx/leaders/monsters/belldandy_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_corrin"
+                texturefile = "gfx/leaders/monsters/corrin_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_desco"
+                texturefile = "gfx/leaders/monsters/desco_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_dullahan"
+                texturefile = "gfx/leaders/monsters/dullahan_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_fino_bloodstone"
+                texturefile = "gfx/leaders/monsters/fino_bloodstone_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_heine"
+                texturefile = "gfx/leaders/monsters/heine_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_holo"
+                texturefile = "gfx/leaders/monsters/holo_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_ishtar"
+                texturefile = "gfx/leaders/monsters/ishtar_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_kurari_rose"
+                texturefile = "gfx/leaders/monsters/kurari_rose_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_laharl"
+                texturefile = "gfx/leaders/monsters/laharl_girl_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_lilith"
+                texturefile = "gfx/leaders/monsters/lilith_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_lucy"
+                texturefile = "gfx/leaders/monsters/lucy_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_makina_hoshimura"
+                texturefile = "gfx/leaders/monsters/makina_hoshimura_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_maou"
+                texturefile = "gfx/leaders/monsters/maou_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_marie_von_eisenberg"
+                texturefile = "gfx/leaders/monsters/marie_von_eisenberg_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_milla_maxwell"
+                texturefile = "gfx/leaders/monsters/milla_maxwell_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_mio_naruse"
+                texturefile = "gfx/leaders/monsters/mio_naruse_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_morrah"
+                texturefile = "gfx/leaders/monsters/morrah_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_purifier"
+                texturefile = "gfx/leaders/monsters/purifier_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_rhea"
+                texturefile = "gfx/leaders/monsters/rhea_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_rias_gremory"
+                texturefile = "gfx/leaders/monsters/rias_gremory_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_rose_monster"
+                texturefile = "gfx/leaders/monsters/rose_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_sakura_minamoto"
+                texturefile = "gfx/leaders/monsters/sakura_minamoto_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_satanichia_mcdowell_kurumizawa"
+                texturefile = "gfx/leaders/monsters/satanichia_mcdowell_kurumizawa_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_saya_kisaragi"
+                texturefile = "gfx/leaders/monsters/saya_kisaragi_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_saya_otonashi"
+                texturefile = "gfx/leaders/monsters/saya_otonashi_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_yuuko_yoshida"
+                texturefile = "gfx/leaders/monsters/yuuko_yoshida_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_shigure"
+                texturefile = "gfx/leaders/monsters/shigure_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_shiraori"
+                texturefile = "gfx/leaders/monsters/shiraori_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_tester"
+                texturefile = "gfx/leaders/monsters/tester_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_tiamat"
+                texturefile = "gfx/leaders/monsters/tiamat_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_velvet_crowe"
+                texturefile = "gfx/leaders/monsters/velvet_crowe_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_vignette_april_tsukinose"
+                texturefile = "gfx/leaders/monsters/vignette_april_tsukinose_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_yamato_wg"
+                texturefile = "gfx/leaders/monsters/yamato_wg_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_zero_two"
+                texturefile = "gfx/leaders/monsters/zero_two_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_mari_setogaya"
+                texturefile = "gfx/leaders/monsters/mari_setogaya_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_sheliss_elleness_zurbach"
+                texturefile = "gfx/leaders/monsters/sheliss_elleness_zurbach_idea.dds"
+        }
+}

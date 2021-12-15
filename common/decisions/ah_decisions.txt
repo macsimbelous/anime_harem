@@ -10,6 +10,12 @@ ah_harem_category = {
 			set_variable = {
 				ah_harem_size = 0
 			}
+			set_variable = {
+				ah_harem_upgrade_limit = 8
+			}
+			set_variable = {
+				ah_harem_upgrade_count = 0
+			}
 		}
 	}
 	ah_expand_harem = {
@@ -18,20 +24,95 @@ ah_harem_category = {
 		visible = {
 			has_country_flag = ah_harem_created_flag
 		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_upgrade_limit_tt
+				check_variable = {
+					ah_harem_upgrade_count < ah_harem_upgrade_limit
+				}
+			}
+		}
 		complete_effect = {
 			add_to_variable = {
 				ah_harem_limit = 4
 			}
+			add_to_variable = {
+				ah_harem_upgrade_count = 1
+			}
+		}
+	}
+	ah_clear_ban = {
+		fire_only_once = no
+		cost = 0
+		visible = {
+			OR = {
+				has_country_flag = ah_girls_ban_flag
+				has_country_flag = ah_traps_ban_flag
+				has_country_flag = ah_monsters_ban_flag
+				has_country_flag = ah_androids_ban_flag
+			}
+		}
+		complete_effect = {
+			clr_country_flag = ah_girls_ban_flag
+			clr_country_flag = ah_traps_ban_flag
+			clr_country_flag = ah_monsters_ban_flag
+			clr_country_flag = ah_androids_ban_flag
 		}
 	}
 	ah_traps_ban = {
-		fire_only_once = yes
+		fire_only_once = no
 		cost = 0
+		visible = {
+			has_country_flag = ah_harem_created_flag
+			NOT = {
+				has_country_flag = ah_traps_ban_flag
+			}
+		}
 		complete_effect = {
 			set_country_flag = ah_traps_ban_flag
 		}
 	}
+	ah_monsters_ban = {
+		fire_only_once = no
+		cost = 0
+		visible = {
+			has_country_flag = ah_harem_created_flag
+			NOT = {
+				has_country_flag = ah_monsters_ban_flag
+			}
+		}
+		complete_effect = {
+			set_country_flag = ah_monsters_ban_flag
+		}
+	}
+	ah_androids_ban = {
+		fire_only_once = no
+		cost = 0
+		visible = {
+			has_country_flag = ah_harem_created_flag
+			NOT = {
+				has_country_flag = ah_androids_ban_flag
+			}
+		}
+		complete_effect = {
+			set_country_flag = ah_androids_ban_flag
+		}
+	}
+	ah_girls_ban = {
+		fire_only_once = no
+		cost = 0
+		visible = {
+			has_country_flag = ah_harem_created_flag
+			NOT = {
+				has_country_flag = ah_girls_ban_flag
+			}
+		}
+		complete_effect = {
+			set_country_flag = ah_girls_ban_flag
+		}
+	}
 }
+
 ah_take_girls_category = {
 	ah_take_erza = {
 		fire_only_once = yes
@@ -133,6 +214,144 @@ ah_take_girls_category = {
 			}
 		}
 	}
+	ah_take_shiki = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_shiki
+			# }
+			create_operative_leader = {
+				name = "Shiki"
+				GFX = GFX_shiki
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+				traits = {
+					operative_linguist
+					operative_seducer
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_rosaria = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_rosaria
+			# }
+			create_operative_leader = {
+				name = "Rosaria"
+				GFX = GFX_rosaria
+				female = yes
+				traits = {
+					operative_infiltrator
+					operative_demolition_expert
+					operative_commando
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_reina_prowler = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_reina_prowler
+			# }
+			create_operative_leader = {
+				name = "Reina Prowler"
+				GFX = GFX_reina_prowler
+				female = yes
+				traits = {
+					operative_infiltrator
+					operative_safe_cracker
+					operative_demolition_expert
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_sheryl_nome = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_sheryl_nome
+			# }
+			create_operative_leader = {
+				name = "Sheryl Nome"
+				GFX = GFX_sheryl_nome
+				female = yes
+				traits = {
+					operative_seducer
+					operative_natural_orator
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
 	ah_take_mamako_oosuki = {
 		fire_only_once = yes
 		cost = 100
@@ -187,26 +406,6 @@ ah_take_girls_category = {
 		complete_effect = {
 			generate_character = {
 				token_base = ah_saint_martha
-			}
-			add_to_variable = {
-				ah_harem_size = 1
-			}
-		}
-	}
-	ah_take_nishizumi_miho = {
-		fire_only_once = yes
-		cost = 100
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = ah_harem_limit_tt
-				check_variable = {
-					ah_harem_size < ah_harem_limit
-				}
-			}
-		}
-		complete_effect = {
-			generate_character = {
-				token_base = ah_nishizumi_miho
 			}
 			add_to_variable = {
 				ah_harem_size = 1
@@ -1608,6 +1807,55 @@ ah_take_girls_category = {
 			generate_character = {
 				token_base = ah_ange_le_carre
 			}
+			create_operative_leader = {
+				name = "Ange le Carré"
+				GFX = GFX_ange_le_carre
+				female = yes
+				traits = {
+					operative_commando
+					operative_demolition_expert
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_makoto_kikuchi = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_makoto_kikuchi
+			# }
+			create_operative_leader = {
+				name = "Makoto Kikuchi"
+				GFX = GFX_makoto_kikuchi
+				female = yes
+				traits = {
+					operative_commando
+					operative_demolition_expert
+					operative_safe_cracker
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				nationalities = {
+					ROOT
+				}
+			}
 			add_to_variable = {
 				ah_harem_size = 1
 			}
@@ -1625,8 +1873,114 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
-			generate_character = {
-				token_base = ah_niko_yazawa
+			# generate_character = {
+			# 	token_base = ah_niko_yazawa
+			# }
+			create_operative_leader = {
+				name = "Niko Yazawa"
+				GFX = GFX_niko_yazawa
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+				traits = {
+					operative_infiltrator
+					operative_natural_orator
+					operative_seducer
+					operative_safe_cracker
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_tomoko_kuroki = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_tomoko_kuroki
+			# }
+			create_operative_leader = {
+				name = "Tomoko Kuroki"
+				GFX = GFX_tomoko_kuroki
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_aika_sumeragi = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_aika_sumeragi
+			# }
+			create_operative_leader = {
+				name = "Aika Sumeragi"
+				GFX = GFX_aika_sumeragi
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_aoba_suzukaze = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_aoba_suzukaze
+			# }
+			create_operative_leader = {
+				name = "Aoba Suzukaze"
+				GFX = GFX_aoba_suzukaze
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
 			}
 			add_to_variable = {
 				ah_harem_size = 1
@@ -1733,7 +2087,980 @@ ah_take_girls_category = {
 			}
 		}
 	}
+	ah_take_ripine = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_ripine
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_charlotte_dunois = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_charlotte_dunois
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_prinz_eugen = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_prinz_eugen
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_erica_blandelli = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_erica_blandelli
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_miki_hoshii = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_miki_hoshii
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_irina_jelavic = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_irina_jelavic
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_alisa_illinichina_amiella = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_alisa_illinichina_amiella
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_kei = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_kei
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_alicia_arcturus = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_alicia_arcturus
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_anna_komiya = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_anna_komiya
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_celestine_lucullus = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_celestine_lucullus
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_cloe = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_cloe
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_igawa_asagi = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_igawa_asagi
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_iris_arcadia = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_iris_arcadia
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_mako_mitsuki = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_mako_mitsuki
+			# }
+			create_operative_leader = {
+				name = "Mako Mitsuki"
+				GFX = GFX_mako_mitsuki
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+				traits = {
+					operative_seducer
+					operative_infiltrator
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_mika_amano = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_mika_amano
+			# }
+			create_operative_leader = {
+				name = "Mika Amano"
+				GFX = GFX_mika_amano
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+				traits = {
+					operative_seducer
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_mistiora_arte = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_mistiora_arte
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_olga_discordia = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_olga_discordia
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_prim_fiorire = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_prim_fiorire
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_rina_komiya = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_rina_komiya
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_sill_plain = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_sill_plain
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_takumi_musashino = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_takumi_musashino
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_tsubasa_kamijo = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_tsubasa_kamijo
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_yuriya_komiya = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_yuriya_komiya
+			# }
+			create_operative_leader = {
+				name = "Yuriya Komiya"
+				GFX = GFX_yuriya_komiya
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+					SOV
+					JAP
+				}
+				traits = {
+					operative_seducer
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_yuuki_kawaragi = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_yuuki_kawaragi
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_risa = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_risa
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_kasumi_nanakura = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_kasumi_nanakura
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_arika_yumemiya = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_arika_yumemiya
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_hitomi_tsukishiro = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_hitomi_tsukishiro
+			# }
+			create_operative_leader = {
+				name = "Hitomi Tsukishiro"
+				GFX = GFX_Hitomi_Tsukishiro
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_illyasviel_von_einzbern = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_illyasviel_von_einzbern
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_madoka_kaname = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_madoka_kaname
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_momo_chiyoda = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_momo_chiyoda
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_nanoha_takamachi = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_nanoha_takamachi
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_asuka_ootorii = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_asuka_ootorii
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_usagi_tsukino = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_usagi_tsukino
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_ami_mizuno = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_ami_mizuno
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_makoto_kino = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_makoto_kino
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_minako_aino = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_minako_aino
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_rei_hino = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_rei_hino
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_chisato_yonamine = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_chisato_yonamine
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_homura_akemi = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_homura_akemi
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_subaru_nakajima = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_subaru_nakajima
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_vivio = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_vivio
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_fate_testarossa = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_fate_testarossa
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_sakuyo_mikage = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = sakuyo_mikage
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_saki_uno = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_saki_uno
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
 }
+
 ah_take_androids_category = {
 	ah_take_kos_mos = {
 		fire_only_once = yes
@@ -2410,6 +3737,20 @@ ah_take_androids_category = {
 			generate_character = {
 				token_base = ah_yurizaki_mira
 			}
+			create_operative_leader = {
+				name = "Yurizaki Mira"
+				GFX = GFX_yurizaki_mira
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+				traits = {
+					operative_seducer
+					operative_natural_orator
+				}
+			}
 			add_to_variable = {
 				ah_harem_size = 1
 			}
@@ -2447,8 +3788,21 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
-			generate_character = {
-				token_base = ah_aegis
+			# generate_character = {
+			# 	token_base = ah_aegis
+			# }
+			create_operative_leader = {
+				name = "Aegis"
+				GFX = GFX_aegis
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+				traits = {
+					operative_commando
+				}
 			}
 			add_to_variable = {
 				ah_harem_size = 1
@@ -2467,8 +3821,57 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
-			generate_character = {
-				token_base = ah_chii
+			# generate_character = {
+			# 	token_base = ah_chii
+			# }
+			create_operative_leader = {
+				name = "Chii"
+				GFX = GFX_chii
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+				traits = {
+					operative_seducer
+					operative_infiltrator
+					operative_master_interrogator
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_vanessa_diodati = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_vanessa_diodati
+			# }
+			create_operative_leader = {
+				name = "Vanessa Diodati"
+				GFX = GFX_vanessa_diodati
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+				traits = {
+					operative_demolition_expert
+					operative_commando
+				}
 			}
 			add_to_variable = {
 				ah_harem_size = 1
@@ -2476,6 +3879,844 @@ ah_take_androids_category = {
 		}
 	}
 }
+
+ah_take_monsters_category = {
+	ah_take_velvet_crowe = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_ah_velvet_crowe
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_rias_gremory = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_rias_gremory
+			# }
+			create_operative_leader = {
+				name = "Rias Gremory"
+				GFX = GFX_rias_gremory
+				traits = {
+					operative_seducer
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_mio_naruse = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_mio_naruse
+			# }
+			create_operative_leader = {
+				name = "Mio Naruse"
+				GFX = GFX_mio_naruse
+				traits = {
+					operative_commando
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_sakura_minamoto = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_sakura_minamoto
+			# }
+			create_operative_leader = {
+				name = "Sakura Minamoto"
+				GFX = GFX_sakura_minamoto
+				traits = {
+					operative_infiltrator
+					operative_natural_orator
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_yuuko_yoshida = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_yuuko_yoshida
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_maou = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_maou
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_holo = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_holo
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_fino_bloodstone = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_fino_bloodstone
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_rhea = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_rhea
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_shiraori = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_shiraori
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_ishtar = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_ishtar
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_lilith = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_lilith
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_rose_monster = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_rose_monster
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_morrah = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_morrah
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_dullahan = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_dullahan
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_milla_maxwell = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_milla_maxwell
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_astaroth = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_astaroth
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_laharl_female = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_laharl_female
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_desco = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_desco
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_tiamat = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_tiamat
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_belldandy = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_belldandy
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_corrin = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_corrin
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_lucy = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_lucy
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_makina_hoshimura = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_makina_hoshimura
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_saya_kisaragi = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_saya_kisaragi
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_02 = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_02
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_vignette_april_tsukinose = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_vignette_april_tsukinose
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_satanichia_mcdowell_kurumizawa = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_satanichia_mcdowell_kurumizawa
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_arnice = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_arnice
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_saya_otonashi = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_saya_otonashi
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_marie_von_eisenberg = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_marie_von_eisenberg
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_kurari_rose = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_kurari_rose
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_heine = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_heine
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_yamato_wg = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_yamato_wg
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_purifier = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_purifier
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_tester = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_tester
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_shigure = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_shigure
+			}
+			create_operative_leader = {
+				name = "Shigure"
+				GFX = GFX_shigure
+				traits = {
+					operative_safe_cracker
+					operative_demolition_expert
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = yes
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_mari_setogaya = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_mari_setogaya
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_sheliss_elleness_zurbach = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_sheliss_elleness_zurbach
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+}
+
 ah_take_traps_category = {
 	ah_take_astolfo = {
 		fire_only_once = yes
@@ -3092,6 +5333,20 @@ ah_take_traps_category = {
 			generate_character = {
 				token_base = ah_aoi_futaba
 			}
+			create_operative_leader = {
+				name = "Aoi Futaba"
+				GFX = GFX_aoi_futaba
+				traits = {
+					operative_seducer
+					operative_linguist
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = no
+				nationalities = {
+					ROOT
+				}
+			}
 			add_to_variable = {
 				ah_harem_size = 1
 			}
@@ -3109,8 +5364,23 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
-			generate_character = {
-				token_base = ah_gasper_vladi
+			# generate_character = {
+			# 	token_base = ah_gasper_vladi
+			# }
+			create_operative_leader = {
+				name = "Gasper Vladi"
+				GFX = GFX_gasper_vladi
+				traits = {
+					operative_seducer
+					operative_double_agent
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = no
+				nationalities = {
+					ROOT
+					ROM
+				}
 			}
 			add_to_variable = {
 				ah_harem_size = 1
@@ -3129,8 +5399,21 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
-			generate_character = {
-				token_base = ah_ryou_akizuki
+			# generate_character = {
+			# 	token_base = ah_ryou_akizuki
+			# }
+			create_operative_leader = {
+				name = "Ryou Akizuki"
+				GFX = GFX_ryou_akizuki
+				traits = {
+					operative_seducer
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = no
+				nationalities = {
+					ROOT
+				}
 			}
 			add_to_variable = {
 				ah_harem_size = 1
@@ -3149,8 +5432,101 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			# generate_character = {
+			# 	token_base = ah_saki_mizushima
+			# }
+			create_operative_leader = {
+				name = "Saki Mizushima"
+				GFX = GFX_saki_mizushima
+				traits = {
+					operative_natural_orator
+				}
+				bypass_recruitment = no
+				available_to_spy_master = yes
+				female = no
+				nationalities = {
+					ROOT
+				}
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_anri_sogahara = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
 			generate_character = {
-				token_base = ah_saki_mizushima
+				token_base = ah_anri_sogahara
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_homare_nao = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_homare_nao
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_kaname = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_kaname
+			}
+			add_to_variable = {
+				ah_harem_size = 1
+			}
+		}
+	}
+	ah_take_hayato_juumonji = {
+		fire_only_once = yes
+		cost = 100
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_limit_tt
+				check_variable = {
+					ah_harem_size < ah_harem_limit
+				}
+			}
+		}
+		complete_effect = {
+			generate_character = {
+				token_base = ah_hayato_juumonji
 			}
 			add_to_variable = {
 				ah_harem_size = 1

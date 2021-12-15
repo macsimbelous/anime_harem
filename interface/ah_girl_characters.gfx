@@ -204,10 +204,6 @@ spriteTypes = {
                 texturefile = "gfx/leaders/girls/miho_nishizumi_idea.dds"
 	}
         spriteType = {
-                name = "GFX_idea_ah_miki_naoki"
-                texturefile = "gfx/leaders/girls/miki_naoki_idea.dds"
-	}
-        spriteType = {
                 name = "GFX_idea_ah_misato_katsuragi"
                 texturefile = "gfx/leaders/girls/misato_katsuragi_idea.dds"
 	}
@@ -222,10 +218,6 @@ spriteTypes = {
         spriteType = {
                 name = "GFX_idea_ah_niko_yazawa"
                 texturefile = "gfx/leaders/girls/niko_yazawa_idea.dds"
-	}
-        spriteType = {
-                name = "GFX_idea_ah_nishizumi_miho"
-                texturefile = "gfx/leaders/girls/nishizumi_miho_idea.dds"
 	}
         spriteType = {
                 name = "GFX_idea_ah_noire"
@@ -386,5 +378,190 @@ spriteTypes = {
         spriteType = {
                 name = "GFX_idea_ah_anastasia_romanova"
                 texturefile = "gfx/leaders/girls/anastasia_romanova_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_ripine"
+                texturefile = "gfx/leaders/girls/ripine_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_charlotte_dunois"
+                texturefile = "gfx/leaders/girls/charlotte_dunois_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_prinz_eugen"
+                texturefile = "gfx/leaders/girls/prinz_eugen_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_erica_blandelli"
+                texturefile = "gfx/leaders/girls/erica_blandelli_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_miki_hoshii"
+                texturefile = "gfx/leaders/girls/miki_hoshii_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_irina_jelavic"
+                texturefile = "gfx/leaders/girls/irina_jelavic_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_alisa_illinichina_amiella"
+                texturefile = "gfx/leaders/girls/alisa_illinichina_amiella_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_kei"
+                texturefile = "gfx/leaders/girls/kei_idea.dds"
+        }
+        #333333333333333
+        spriteType = {
+                name = "GFX_idea_ah_alicia_arcturus"
+                texturefile = "gfx/leaders/girls/alicia_arcturus_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_anna_komiya"
+                texturefile = "gfx/leaders/girls/anna_komiya_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_celestine_lucullus"
+                texturefile = "gfx/leaders/girls/celestine_lucullus_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_cloe"
+                texturefile = "gfx/leaders/girls/cloe_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_igawa_asagi"
+                texturefile = "gfx/leaders/girls/igawa_asagi_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_iris_arcadia"
+                texturefile = "gfx/leaders/girls/iris_arcadia_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_mako_mitsuki"
+                texturefile = "gfx/leaders/girls/mako_mitsuki_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_mika_amano"
+                texturefile = "gfx/leaders/girls/mika_amano_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_mistiora_arte"
+                texturefile = "gfx/leaders/girls/mistiora_arte_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_olga_discordia"
+                texturefile = "gfx/leaders/girls/olga_discordia_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_prim_fiorire"
+                texturefile = "gfx/leaders/girls/prim_fiorire_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_rina_komiya"
+                texturefile = "gfx/leaders/girls/rina_komiya_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_sill_plain"
+                texturefile = "gfx/leaders/girls/sill_plain_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_takumi_musashino"
+                texturefile = "gfx/leaders/girls/takumi_musashino_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_tsubasa_kamijo"
+                texturefile = "gfx/leaders/girls/tsubasa_kamijo_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_yuriya_komiya"
+                texturefile = "gfx/leaders/girls/yuriya_komiya_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_yuuki_kawaragi"
+                texturefile = "gfx/leaders/girls/yuuki_kawaragi_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_risa"
+                texturefile = "gfx/leaders/girls/risa_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_kasumi_nanakura"
+                texturefile = "gfx/leaders/girls/kasumi_nanakura_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_arika_yumemiya"
+                texturefile = "gfx/leaders/girls/arika_yumemiya_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_hitomi_tsukishiro"
+                texturefile = "gfx/leaders/girls/hitomi_tsukishiro_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_illyasviel_von_einzbern"
+                texturefile = "gfx/leaders/girls/illyasviel_von_einzbern_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_madoka_kaname"
+                texturefile = "gfx/leaders/girls/madoka_kaname_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_momo_chiyoda"
+                texturefile = "gfx/leaders/girls/momo_chiyoda_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_nanoha_takamachi"
+                texturefile = "gfx/leaders/girls/nanoha_takamachi_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_asuka_ootorii"
+                texturefile = "gfx/leaders/girls/asuka_ootorii_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_usagi_tsukino"
+                texturefile = "gfx/leaders/girls/usagi_tsukino_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_ami_mizuno"
+                texturefile = "gfx/leaders/girls/ami_mizuno_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_makoto_kino"
+                texturefile = "gfx/leaders/girls/makoto_kino_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_minako_aino"
+                texturefile = "gfx/leaders/girls/minako_aino_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_rei_hino"
+                texturefile = "gfx/leaders/girls/rei_hino_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_chisato_yonamine"
+                texturefile = "gfx/leaders/girls/chisato_yonamine_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_homura_akemi"
+                texturefile = "gfx/leaders/girls/homura_akemi_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_subaru_nakajima"
+                texturefile = "gfx/leaders/girls/subaru_nakajima_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_vivio"
+                texturefile = "gfx/leaders/girls/vivio_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_fate_testarossa"
+                texturefile = "gfx/leaders/girls/fate_testarossa_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_sakuyo_mikage"
+                texturefile = "gfx/leaders/girls/sakuyo_mikage_idea.dds"
+        }
+        spriteType = {
+                name = "GFX_idea_ah_saki_uno"
+                texturefile = "gfx/leaders/girls/saki_uno_idea.dds"
         }
 }

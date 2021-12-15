@@ -26,7 +26,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ah_gasper_vladi"
 		texturefile = "gfx/leaders/traps/gasper_vladi_idea.dds"
-	}	
+	}
 	spriteType = {
 		name = "GFX_idea_ah_hacka_doll_no_3"
 		texturefile = "gfx/leaders/traps/hacka_doll_3_idea.dds"
@@ -135,35 +135,21 @@ spriteTypes = {
 		name = "GFX_idea_ah_mare_bello_fiore"
 		texturefile = "gfx/leaders/traps/mare_bello_fiore_idea.dds"
 	}
+	#333333333333333333333
+	spriteType = {
+		name = "GFX_idea_ah_anri_sogahara"
+		texturefile = "gfx/leaders/traps/anri_sogahara_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_homare_nao"
+		texturefile = "gfx/leaders/traps/homare_nao_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_kaname"
+		texturefile = "gfx/leaders/traps/kaname_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ah_hayato_juumonji"
+		texturefile = "gfx/leaders/traps/hayato_juumonji_idea.dds"
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

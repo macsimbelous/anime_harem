@@ -10,17 +10,27 @@ characters = {
 				large = "gfx/leaders/androids/kos-mos.dds"
 			}
 		}
+		advisor = {
+			slot = theorist
+			idea_token = ah_kos_mos
+			ledger = army
+			cost = 50
+			traits = {
+				mobile_warfare_expert
+			}
+		}
 		field_marshal = {
 			traits = {
-				bearer_of_artillery
-				defensive_doctrine
-				unyielding_defender
+				armor_officer
+				offensive_doctrine
+				panzer_leader
+				urban_assault_specialist
 			}
-			skill = 4
-			attack_skill = 4
+			skill = 6
+			attack_skill = 6
 			defense_skill = 5
-			planning_skill = 4
-			logistics_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
 			legacy_id = -1
 		}
 	}
@@ -132,7 +142,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ah_risa
-			cost = 150
+			cost = 50
 			traits = {
 				princess_of_terror
 			}
@@ -661,12 +671,18 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = ah_yurizaki_mira
-			cost = 150
+			cost = 50
 			available = {
 				has_intelligence_agency = yes
 			}
 			traits = {
 				head_of_intelligence
+			}
+			modifier = {
+				agency_upgrade_time = -0.33
+				crypto_strength = 5
+				decryption_power = 30
+				operative_slot = 1
 			}
 		}
 	}
@@ -690,44 +706,22 @@ characters = {
 			legacy_id = -1
 		}
 	}
-	ah_aegis = {
-		name = ah_aegis
-		portraits = {
-			army = {
-				small = GFX_idea_ah_aegis
-				large = "gfx/leaders/androids/aegis.dds"
-			}
-		}
-		corps_commander = {
-			traits = {
-				
-			}
-			skill = 1
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = -1
-		}
-	}
-	ah_chii = {
-		name = ah_chii
-		portraits = {
-			army = {
-				small = GFX_idea_ah_chii
-				large = "gfx/leaders/androids/chii.dds"
-			}
-		}
-		corps_commander = {
-			traits = {
-				
-			}
-			skill = 1
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = -1
-		}
-	}
+	# ah_aegis = {
+	# 	name = ah_aegis
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_idea_ah_aegis
+	# 			large = "gfx/leaders/androids/aegis.dds"
+	# 		}
+	# 	}
+	# }
+	# ah_chii = {
+	# 	name = ah_chii
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_idea_ah_chii
+	# 			large = "gfx/leaders/androids/chii.dds"
+	# 		}
+	# 	}
+	# }
 }

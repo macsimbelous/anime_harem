@@ -88,18 +88,15 @@ characters = {
 		portraits = {
 			army = {
 				small = "GFX_idea_ah_felix_argyle"
-			}
-			army = {
 				large = "gfx/leaders/traps/felix_argyle.dds"
 			}
 		}
 		field_marshal = {
 			traits = {
-				trait_engineer
-				desert_fox
-				swamp_fox
-				trait_mountaineer
-				hill_fighter
+				politically_connected
+				bearer_of_artillery
+				offensive_doctrine
+				adaptable
 			}
 			skill = 4
 			attack_skill = 5
@@ -114,7 +111,7 @@ characters = {
 			idea_token = ah_felix_argyle
 			cost = 50
 			traits = {
-				military_theorist
+				superior_firepower_expert
 			}
 		}
 	}
@@ -650,19 +647,50 @@ characters = {
 			traits = {
 				head_of_intelligence
 			}
+			modifier = {
+				agency_upgrade_time = -0.33
+				operative_slot = 3
+			}
 		}
 	}
-	ah_gasper_vladi = {
-		name = ah_gasper_vladi
+	# ah_gasper_vladi = {
+	# 	name = ah_gasper_vladi
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_idea_ah_gasper_vladi
+	# 			large = "gfx/leaders/traps/gasper_vladi.dds"
+	# 		}
+	# 	}
+	# }
+	# ah_ryou_akizuki = {
+	# 	name = ah_ryou_akizuki
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_idea_ah_ryou_akizuki
+	# 			large = "gfx/leaders/traps/ryou_akizuki.dds"
+	# 		}
+	# 	}
+	# }
+	# ah_saki_mizushima = {
+	# 	name = ah_saki_mizushima
+	# 	portraits = {
+	# 		army = {
+	# 			small = GFX_idea_ah_saki_mizushima
+	# 			large = "gfx/leaders/traps/saki_mizushima.dds"
+	# 		}
+	# 	}
+	# }
+	ah_anri_sogahara = {
+		name = ah_anri_sogahara
 		portraits = {
 			army = {
-				small = GFX_idea_ah_gasper_vladi
-				large = "gfx/leaders/traps/gasper_vladi.dds"
+				small = GFX_idea_ah_anri_sogahara
+				large = "gfx/leaders/traps/anri_sogahara.dds"
 			}
 		}
 		corps_commander = {
 			traits = {
-				
+
 			}
 			skill = 1
 			attack_skill = 2
@@ -672,17 +700,17 @@ characters = {
 			legacy_id = -1
 		}
 	}
-	ah_ryou_akizuki = {
-		name = ah_ryou_akizuki
+	ah_homare_nao = {
+		name = ah_homare_nao
 		portraits = {
 			army = {
-				small = GFX_idea_ah_ryou_akizuki
-				large = "gfx/leaders/traps/ryou_akizuki.dds"
+				small = GFX_idea_ah_homare_nao
+				large = "gfx/leaders/traps/homare_nao.dds"
 			}
 		}
 		corps_commander = {
 			traits = {
-				
+				commando
 			}
 			skill = 1
 			attack_skill = 2
@@ -692,17 +720,37 @@ characters = {
 			legacy_id = -1
 		}
 	}
-	ah_saki_mizushima = {
-		name = ah_saki_mizushima
+	ah_kaname = {
+		name = ah_kaname
 		portraits = {
 			army = {
-				small = GFX_idea_ah_saki_mizushima
-				large = "gfx/leaders/traps/saki_mizushima.dds"
+				small = GFX_idea_ah_kaname
+				large = "gfx/leaders/traps/kaname.dds"
 			}
 		}
 		corps_commander = {
 			traits = {
-				
+
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+	ah_hayato_juumonji = {
+		name = ah_hayato_juumonji
+		portraits = {
+			army = {
+				small = GFX_idea_ah_hayato_juumonji
+				large = "gfx/leaders/traps/hayato_juumonji.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+
 			}
 			skill = 1
 			attack_skill = 2
