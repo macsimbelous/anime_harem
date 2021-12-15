@@ -41,6 +41,170 @@ ah_harem_category = {
 			}
 		}
 	}
+	ah_change_leader_to_anastasia_romanova = {
+		fire_only_once = no
+		cost = 100
+		visible = {
+			has_government = neutrality
+			has_country_flag = ah_harem_created_flag
+			NOT = {
+				has_country_leader = {
+					character = ah_anastasia_romanova
+					ruling_only = yes
+				}
+			}
+		}
+		available = {
+			ah_anastasia_romanova = {
+				OR = {
+					is_unit_leader = yes
+					is_advisor = yes
+				}
+				
+			}
+			check_variable = {
+				ah_harem_size > 19
+			}
+		}
+		complete_effect = {
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = ah_anastasia_romanova
+				country_leader = {
+					ideology = despotism
+					expire = "1959.12.23.1"
+					traits = {
+						#peoples_favorite
+					}
+					
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	ah_change_leader_to_histoire = {
+		fire_only_once = no
+		cost = 100
+		visible = {
+			has_government = communism
+			has_country_flag = ah_harem_created_flag
+			NOT = {
+				has_country_leader = {
+					character = ah_histoire
+					ruling_only = yes
+				}
+			}
+		}
+		available = {
+			ah_histoire = {
+				OR = {
+					is_unit_leader = yes
+					is_advisor = yes
+				}
+				
+			}
+			check_variable = {
+				ah_harem_size > 19
+			}
+		}
+		complete_effect = {
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = ah_histoire
+				country_leader = {
+					ideology = stalinism
+					expire = "1959.12.23.1"
+					traits = {
+						#peoples_favorite
+					}
+					
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	ah_change_leader_to_velvet_crowe = {
+		fire_only_once = no
+		cost = 100
+		visible = {
+			has_government = fascism_ideology
+			has_country_flag = ah_harem_created_flag
+			NOT = {
+				has_country_leader = {
+					character = ah_velvet_crowe
+					ruling_only = yes
+				}
+			}
+		}
+		available = {
+			ah_velvet_crowe = {
+				OR = {
+					is_unit_leader = yes
+					is_advisor = yes
+				}
+				
+			}
+			check_variable = {
+				ah_harem_size > 19
+			}
+		}
+		complete_effect = {
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = ah_velvet_crowe
+				country_leader = {
+					ideology = despotism
+					expire = "1959.12.23.1"
+					traits = {
+						#peoples_favorite
+					}
+					
+				}
+				promote_leader = yes
+			}
+		}
+	}
+	ah_change_leader_to_astolfo = {
+		fire_only_once = yes
+		cost = 100
+		visible = {
+			has_government = liberalism
+			has_country_flag = ah_harem_created_flag
+			NOT = {
+				has_country_leader = {
+					character = ah_astolfo
+					ruling_only = yes
+				}
+			}
+		}
+		available = {
+			ah_astolfo = {
+				OR = {
+					is_unit_leader = yes
+					is_advisor = yes
+				}
+				
+			}
+			check_variable = {
+				ah_harem_size > 19
+			}
+		}
+		complete_effect = {
+			retire_country_leader = yes
+			add_country_leader_role = {
+				character = ah_astolfo
+				country_leader = {
+					ideology = despotism
+					expire = "1959.12.23.1"
+					traits = {
+						#peoples_favorite
+					}
+					
+				}
+				promote_leader = yes
+			}
+		}
+	}
 	ah_clear_ban = {
 		fire_only_once = no
 		cost = 0
@@ -3894,7 +4058,7 @@ ah_take_monsters_category = {
 		}
 		complete_effect = {
 			generate_character = {
-				token_base = ah_ah_velvet_crowe
+				token_base = ah_velvet_crowe
 			}
 			add_to_variable = {
 				ah_harem_size = 1
