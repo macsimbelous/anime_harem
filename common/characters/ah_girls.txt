@@ -331,6 +331,15 @@ characters = {
 				air_chief_night_operations_3
 			}
 		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 	}
 	ah_isuzu_sento = {
 		name = ah_isuzu_sento
@@ -1711,9 +1720,6 @@ characters = {
 			modifier = {
 				research_speed_factor = 0.15
 			}
-			ai_will_do = {
-				factor = 2
-			}
 		}
 	}
 	ah_ripine = {
@@ -1946,11 +1952,11 @@ characters = {
 		corps_commander = {
 			traits = {
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
 		}
 	}
 	ah_iris_arcadia = {

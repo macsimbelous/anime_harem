@@ -3,6 +3,7 @@ ah_harem_category = {
 		fire_only_once = yes
 		cost = 100
 		complete_effect = {
+			add_ideas = ah_harem
 			set_country_flag = ah_harem_created_flag
 			set_variable = {
 				ah_harem_limit = 4
@@ -55,15 +56,20 @@ ah_harem_category = {
 			}
 		}
 		available = {
-			ah_anastasia_romanova = {
-				OR = {
-					is_unit_leader = yes
-					is_advisor = yes
+			custom_trigger_tooltip = {
+				tooltip = ah_anastasia_romanova_taked_tt
+				ah_anastasia_romanova = {
+					OR = {
+						is_unit_leader = yes
+						is_advisor = yes
+					}
 				}
-				
 			}
-			check_variable = {
-				ah_harem_size > 19
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_size_for_change_leader_tt
+				check_variable = {
+					ah_harem_size > 19
+				}
 			}
 		}
 		complete_effect = {
@@ -74,9 +80,11 @@ ah_harem_category = {
 					ideology = despotism
 					expire = "1959.12.23.1"
 					traits = {
-						#peoples_favorite
+						underage_monarch
+						legitimate_heir
+						autocratic_imperialist
+						popular_queen
 					}
-					
 				}
 				promote_leader = yes
 			}
@@ -96,15 +104,20 @@ ah_harem_category = {
 			}
 		}
 		available = {
-			ah_histoire = {
-				OR = {
-					is_unit_leader = yes
-					is_advisor = yes
+			custom_trigger_tooltip = {
+				tooltip = ah_histoire_taked_tt
+				ah_histoire = {
+					OR = {
+						is_unit_leader = yes
+						is_advisor = yes
+					}
 				}
-				
 			}
-			check_variable = {
-				ah_harem_size > 19
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_size_for_change_leader_tt
+				check_variable = {
+					ah_harem_size > 19
+				}
 			}
 		}
 		complete_effect = {
@@ -115,9 +128,11 @@ ah_harem_category = {
 					ideology = stalinism
 					expire = "1959.12.23.1"
 					traits = {
-						#peoples_favorite
+						dictator
+						socialite_connections
+						great_architect
+						triumphant_revolutionary
 					}
-					
 				}
 				promote_leader = yes
 			}
@@ -137,15 +152,20 @@ ah_harem_category = {
 			}
 		}
 		available = {
-			ah_velvet_crowe = {
-				OR = {
-					is_unit_leader = yes
-					is_advisor = yes
+			custom_trigger_tooltip = {
+				tooltip = ah_velvet_crowe_taked_tt
+				ah_velvet_crowe = {
+					OR = {
+						is_unit_leader = yes
+						is_advisor = yes
+					}
 				}
-				
 			}
-			check_variable = {
-				ah_harem_size > 19
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_size_for_change_leader_tt
+				check_variable = {
+					ah_harem_size > 19
+				}
 			}
 		}
 		complete_effect = {
@@ -156,9 +176,11 @@ ah_harem_category = {
 					ideology = despotism
 					expire = "1959.12.23.1"
 					traits = {
-						#peoples_favorite
+						dictator
+						autocratic_imperialist
+						conservative_nationalist
+						great_war_hero
 					}
-					
 				}
 				promote_leader = yes
 			}
@@ -178,15 +200,20 @@ ah_harem_category = {
 			}
 		}
 		available = {
-			ah_astolfo = {
-				OR = {
-					is_unit_leader = yes
-					is_advisor = yes
+			custom_trigger_tooltip = {
+				tooltip = ah_astolfo_taked_tt
+				ah_astolfo = {
+					OR = {
+						is_unit_leader = yes
+						is_advisor = yes
+					}
 				}
-				
 			}
-			check_variable = {
-				ah_harem_size > 19
+			custom_trigger_tooltip = {
+				tooltip = ah_harem_size_for_change_leader_tt
+				check_variable = {
+					ah_harem_size > 19
+				}
 			}
 		}
 		complete_effect = {
@@ -197,9 +224,11 @@ ah_harem_category = {
 					ideology = despotism
 					expire = "1959.12.23.1"
 					traits = {
-						#peoples_favorite
+						conservative_grandee
+						indomitable_perseverance
+						generallissimo
+						political_dancer
 					}
-					
 				}
 				promote_leader = yes
 			}
@@ -290,6 +319,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_erza
 			}
@@ -310,6 +340,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_asuka
 			}
@@ -330,6 +361,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_aurora_suya_rhys_kaymin
 			}
@@ -350,6 +382,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_anastasia
 			}
@@ -370,6 +403,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_lightning
 			}
@@ -390,6 +424,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_shiki
 			# }
@@ -424,6 +459,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_rosaria
 			# }
@@ -459,6 +495,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_reina_prowler
 			# }
@@ -494,6 +531,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_sheryl_nome
 			# }
@@ -528,6 +566,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_mamako_oosuki
 			}
@@ -548,6 +587,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_anastasia_romanova
 			}
@@ -568,6 +608,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_saint_martha
 			}
@@ -588,6 +629,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_asuna_yuuki
 			}
@@ -608,6 +650,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_mash_kyrielight
 			}
@@ -628,6 +671,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_maple
 			}
@@ -648,6 +692,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_yoko_littner
 			}
@@ -668,6 +713,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kallen_stadtfeld
 			}
@@ -688,6 +734,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_saki_rukino
 			}
@@ -708,6 +755,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kurumi_tokisaki
 			}
@@ -728,6 +776,8 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_air_chief_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_sanya_v_litvyak
 			}
@@ -748,6 +798,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_isuzu_sento
 			}
@@ -768,6 +819,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_volemia
 			}
@@ -788,6 +840,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_camilla
 			}
@@ -808,6 +861,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_sinon
 			}
@@ -828,6 +882,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kaname_chidori
 			}
@@ -848,6 +903,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_yoshiko_tsushima
 			}
@@ -868,6 +924,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ranko_kanzaki
 			}
@@ -888,6 +945,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_elma
 			}
@@ -908,6 +966,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ako_tamaki
 			}
@@ -928,6 +987,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_celica
 			}
@@ -948,6 +1008,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_cryska_barchenowa
 			}
@@ -968,6 +1029,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_fiora
 			}
@@ -988,6 +1050,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_haruhi_suzumiya
 			}
@@ -1008,6 +1071,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kiana_kaslana
 			}
@@ -1028,6 +1092,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_konoko
 			}
@@ -1048,6 +1113,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_lina_inverse
 			}
@@ -1068,6 +1134,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_neptune
 			}
@@ -1088,6 +1155,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ryuuko_matoi
 			}
@@ -1108,6 +1176,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_satellizer_el_bridget
 			}
@@ -1128,6 +1197,8 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_siluca_meletes
 			}
@@ -1148,6 +1219,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_yuno_gasai
 			}
@@ -1168,6 +1240,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_byleth_eisner
 			}
@@ -1188,6 +1261,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_eula
 			}
@@ -1208,6 +1282,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_5pb
 			}
@@ -1228,6 +1303,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_blanc
 			}
@@ -1248,6 +1324,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_compa
 			}
@@ -1268,6 +1345,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_djeeta
 			}
@@ -1288,6 +1366,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ellis
 			}
@@ -1308,6 +1387,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_escha_malier
 			}
@@ -1328,6 +1408,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_fujimaru_ritsuka
 			}
@@ -1348,6 +1429,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_honoka_kousaka
 			}
@@ -1368,6 +1450,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_if
 			}
@@ -1388,6 +1471,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kasumi
 			}
@@ -1408,6 +1492,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_merurulince_rede_arls
 			}
@@ -1428,6 +1513,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_miho_nishizumi
 			}
@@ -1448,6 +1534,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_misato_katsuragi
 			}
@@ -1468,6 +1555,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_naru_narusegawa
 			}
@@ -1488,6 +1576,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_noire
 			}
@@ -1508,6 +1597,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_rei_ayanami
 			}
@@ -1528,6 +1618,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ryza
 			}
@@ -1548,6 +1639,8 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_selesia_upitiria
 			}
@@ -1568,6 +1661,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_sophie_neuenmuller
 			}
@@ -1588,6 +1682,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_vert
 			}
@@ -1608,6 +1703,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_yukina_himeragi
 			}
@@ -1628,6 +1724,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_yuna
 			}
@@ -1648,6 +1745,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_noelle
 			}
@@ -1668,6 +1766,8 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_eruza_guranhirute
 			}
@@ -1688,6 +1788,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_aoi_sakurai
 			}
@@ -1708,6 +1809,8 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_yamato_kancol
 			}
@@ -1728,6 +1831,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_atago_azur_lane
 			}
@@ -1748,6 +1852,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_avrora_azur_lane
 			}
@@ -1768,6 +1873,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_belfast
 			}
@@ -1788,6 +1894,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_marblehead
 			}
@@ -1808,6 +1915,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_saint_louis_azur_lane
 			}
@@ -1828,6 +1936,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_takao_azur_lane
 			}
@@ -1848,6 +1957,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_tosa_azur_lane
 			}
@@ -1868,6 +1978,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_sovetskaya_rossiya
 			}
@@ -1888,6 +1999,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_shima_tateishi
 			}
@@ -1908,6 +2020,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_akeno_misaki
 			}
@@ -1928,6 +2041,8 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_chief_tt
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_beidou
 			}
@@ -1948,6 +2063,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
 			generate_character = {
 				token_base = ah_minami_nitta
 			}
@@ -1968,6 +2084,8 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_operative_leader_tt
 			generate_character = {
 				token_base = ah_ange_le_carre
 			}
@@ -2002,6 +2120,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_makoto_kikuchi
 			# }
@@ -2037,6 +2156,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_niko_yazawa
 			# }
@@ -2073,6 +2193,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_tomoko_kuroki
 			# }
@@ -2103,6 +2224,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_aika_sumeragi
 			# }
@@ -2133,6 +2255,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_aoba_suzukaze
 			# }
@@ -2163,6 +2286,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
 			generate_character = {
 				token_base = ah_mikumo_guynemer
 			}
@@ -2183,6 +2307,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
 			generate_character = {
 				token_base = ah_asuka_tanaka
 			}
@@ -2203,6 +2328,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
 			generate_character = {
 				token_base = ah_lucy_yamagami
 			}
@@ -2223,6 +2349,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
 			generate_character = {
 				token_base = ah_megumin
 			}
@@ -2243,6 +2370,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
 			generate_character = {
 				token_base = ah_ayame_himuro
 			}
@@ -2263,6 +2391,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ripine
 			}
@@ -2283,6 +2412,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_charlotte_dunois
 			}
@@ -2303,6 +2433,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_prinz_eugen
 			}
@@ -2323,6 +2454,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_erica_blandelli
 			}
@@ -2343,6 +2475,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_miki_hoshii
 			}
@@ -2363,6 +2496,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_irina_jelavic
 			}
@@ -2383,6 +2517,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_alisa_illinichina_amiella
 			}
@@ -2403,6 +2538,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kei
 			}
@@ -2423,6 +2559,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_alicia_arcturus
 			}
@@ -2443,6 +2580,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_anna_komiya
 			}
@@ -2463,6 +2601,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_celestine_lucullus
 			}
@@ -2483,6 +2622,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_cloe
 			}
@@ -2503,6 +2643,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_igawa_asagi
 			}
@@ -2523,6 +2664,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_iris_arcadia
 			}
@@ -2543,6 +2685,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_mako_mitsuki
 			# }
@@ -2577,6 +2720,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_mika_amano
 			# }
@@ -2610,6 +2754,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_mistiora_arte
 			}
@@ -2630,6 +2775,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_olga_discordia
 			}
@@ -2650,6 +2796,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_prim_fiorire
 			}
@@ -2670,6 +2817,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_rina_komiya
 			}
@@ -2690,6 +2838,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_sill_plain
 			}
@@ -2710,6 +2859,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_takumi_musashino
 			}
@@ -2730,6 +2880,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_tsubasa_kamijo
 			}
@@ -2750,6 +2901,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_yuriya_komiya
 			# }
@@ -2785,6 +2937,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_yuuki_kawaragi
 			}
@@ -2805,6 +2958,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_risa
 			}
@@ -2825,6 +2979,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kasumi_nanakura
 			}
@@ -2845,6 +3000,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_arika_yumemiya
 			}
@@ -2865,6 +3021,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_hitomi_tsukishiro
 			# }
@@ -2895,6 +3052,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_illyasviel_von_einzbern
 			}
@@ -2915,6 +3073,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_madoka_kaname
 			}
@@ -2935,6 +3094,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_momo_chiyoda
 			}
@@ -2955,6 +3115,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_nanoha_takamachi
 			}
@@ -2975,6 +3136,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_asuka_ootorii
 			}
@@ -2995,6 +3157,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_usagi_tsukino
 			}
@@ -3015,6 +3178,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ami_mizuno
 			}
@@ -3035,6 +3199,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_makoto_kino
 			}
@@ -3055,6 +3220,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_minako_aino
 			}
@@ -3075,6 +3241,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_rei_hino
 			}
@@ -3095,6 +3262,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_chisato_yonamine
 			}
@@ -3115,6 +3283,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_homura_akemi
 			}
@@ -3135,6 +3304,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_subaru_nakajima
 			}
@@ -3155,6 +3325,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_vivio
 			}
@@ -3175,6 +3346,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_fate_testarossa
 			}
@@ -3195,6 +3367,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = sakuyo_mikage
 			}
@@ -3215,6 +3388,7 @@ ah_take_girls_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_saki_uno
 			}
@@ -3238,6 +3412,8 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kos_mos
 			}
@@ -3258,6 +3434,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_fiora_mechon
 			}
@@ -3278,6 +3455,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_mythra
 			}
@@ -3298,6 +3476,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
 			generate_character = {
 				token_base = ah_histoire
 			}
@@ -3318,6 +3497,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_alisa_boskonovich
 			}
@@ -3338,6 +3518,8 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_risa_android
 			}
@@ -3358,6 +3540,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_2b
 			}
@@ -3378,6 +3561,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_cibo
 			}
@@ -3398,6 +3582,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_a2
 			}
@@ -3418,6 +3603,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_edi
 			}
@@ -3438,6 +3624,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_pyra
 			}
@@ -3458,6 +3645,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_rozen_s_series
 			}
@@ -3478,6 +3666,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_clarion
 			}
@@ -3498,6 +3687,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_pneuma
 			}
@@ -3518,6 +3708,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_hatsune_miku
 			}
@@ -3538,6 +3729,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_hana
 			}
@@ -3558,6 +3750,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_automaton
 			}
@@ -3578,6 +3771,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_phantom_queen_ex_xecty
 			}
@@ -3598,6 +3792,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_mhmd_02_haruko
 			}
@@ -3618,6 +3813,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_t_elos
 			}
@@ -3638,6 +3834,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_aino
 			}
@@ -3658,6 +3855,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_rose
 			}
@@ -3678,6 +3876,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_elizabeth
 			}
@@ -3698,6 +3897,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_vivy
 			}
@@ -3718,6 +3918,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_ashigara_arp
 			}
@@ -3738,6 +3939,8 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_chief_tt
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_takao_arp
 			}
@@ -3758,6 +3961,8 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_i_410
 			}
@@ -3778,6 +3983,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_haruna
 			}
@@ -3798,6 +4004,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_kirishima
 			}
@@ -3818,6 +4025,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_kongou_arp
 			}
@@ -3838,6 +4046,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_atago_arp
 			}
@@ -3858,6 +4067,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_caseal
 			}
@@ -3878,6 +4088,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_hiei_arp
 			}
@@ -3898,6 +4109,8 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_operative_leader_tt
 			generate_character = {
 				token_base = ah_yurizaki_mira
 			}
@@ -3932,6 +4145,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_mei_fang
 			}
@@ -3952,6 +4166,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_aegis
 			# }
@@ -3985,6 +4200,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_chii
 			# }
@@ -4020,6 +4236,7 @@ ah_take_androids_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_vanessa_diodati
 			# }
@@ -4057,6 +4274,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_velvet_crowe
 			}
@@ -4077,6 +4295,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_rias_gremory
 			# }
@@ -4110,6 +4329,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_mio_naruse
 			# }
@@ -4143,6 +4363,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_sakura_minamoto
 			# }
@@ -4177,6 +4398,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_yuuko_yoshida
 			}
@@ -4197,6 +4419,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_maou
 			}
@@ -4217,6 +4440,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_holo
 			}
@@ -4237,6 +4461,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_fino_bloodstone
 			}
@@ -4257,6 +4482,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_rhea
 			}
@@ -4277,6 +4503,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_shiraori
 			}
@@ -4297,6 +4524,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ishtar
 			}
@@ -4317,6 +4545,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_lilith
 			}
@@ -4337,6 +4566,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_rose_monster
 			}
@@ -4357,6 +4587,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_morrah
 			}
@@ -4377,6 +4608,8 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_high_command_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_dullahan
 			}
@@ -4397,6 +4630,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_milla_maxwell
 			}
@@ -4417,6 +4651,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_astaroth
 			}
@@ -4437,6 +4672,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_laharl_female
 			}
@@ -4457,6 +4693,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_desco
 			}
@@ -4467,7 +4704,7 @@ ah_take_monsters_category = {
 	}
 	ah_take_tiamat = {
 		fire_only_once = yes
-		cost = 100
+		cost = 200
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = ah_harem_limit_tt
@@ -4477,6 +4714,8 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_tiamat
 			}
@@ -4497,6 +4736,8 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_belldandy
 			}
@@ -4517,6 +4758,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_corrin
 			}
@@ -4537,6 +4779,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_lucy
 			}
@@ -4557,6 +4800,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_makina_hoshimura
 			}
@@ -4577,6 +4821,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_saya_kisaragi
 			}
@@ -4597,6 +4842,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_02
 			}
@@ -4617,6 +4863,8 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_vignette_april_tsukinose
 			}
@@ -4637,6 +4885,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_satanichia_mcdowell_kurumizawa
 			}
@@ -4657,6 +4906,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_arnice
 			}
@@ -4677,6 +4927,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_saya_otonashi
 			}
@@ -4697,6 +4948,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_marie_von_eisenberg
 			}
@@ -4717,6 +4969,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kurari_rose
 			}
@@ -4737,6 +4990,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_heine
 			}
@@ -4757,6 +5011,8 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_yamato_wg
 			}
@@ -4777,6 +5033,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_purifier
 			}
@@ -4797,6 +5054,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_tester
 			}
@@ -4817,6 +5075,8 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_operative_leader_tt
 			generate_character = {
 				token_base = ah_shigure
 			}
@@ -4851,6 +5111,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_mari_setogaya
 			}
@@ -4871,6 +5132,7 @@ ah_take_monsters_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_sheliss_elleness_zurbach
 			}
@@ -4894,6 +5156,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_astolfo
 			}
@@ -4914,6 +5177,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
 			generate_character = {
 				token_base = ah_hideri_kanzaki
 			}
@@ -4934,6 +5198,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_tetora
 			}
@@ -4954,6 +5219,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ringo_tsukimiya
 			}
@@ -4974,6 +5240,8 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_felix_argyle
 			}
@@ -4994,6 +5262,8 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_oboro_tsukimigusa
 			}
@@ -5014,6 +5284,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_hitoshi_sugoroku
 			}
@@ -5034,6 +5305,8 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kaoru_hanase
 			}
@@ -5054,6 +5327,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_aoi_hyoudou
 			}
@@ -5074,6 +5348,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kaguya_arikawa
 			}
@@ -5094,6 +5369,8 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_tama_kyan
 			}
@@ -5114,6 +5391,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_hime_arikawa
 			}
@@ -5134,6 +5412,8 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_theorist_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_sylvia
 			}
@@ -5154,6 +5434,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_birdy_cephon_altera
 			}
@@ -5174,6 +5455,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_souji_mitsuka
 			}
@@ -5194,6 +5476,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ranga
 			}
@@ -5214,6 +5497,8 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_air_chief_tt
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_yukikaze
 			}
@@ -5234,6 +5519,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_mitsunaga_oda
 			}
@@ -5254,6 +5540,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ritsu_souma
 			}
@@ -5274,6 +5561,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_xianming_lin
 			}
@@ -5294,6 +5582,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_mizuho_miyanokouji
 			}
@@ -5314,6 +5603,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_youta_tsunashi
 			}
@@ -5334,6 +5624,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_fish_eye
 			}
@@ -5354,6 +5645,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_hacka_doll_no_3
 			}
@@ -5374,6 +5666,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_ranma_saotome
 			}
@@ -5394,6 +5687,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_hamaji_yakumo
 			}
@@ -5414,6 +5708,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_taroumaru_seike
 			}
@@ -5434,6 +5729,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_mariya_shidou
 			}
@@ -5454,6 +5750,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_navy_leader_tt
 			generate_character = {
 				token_base = ah_russell
 			}
@@ -5474,6 +5771,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
 			generate_character = {
 				token_base = ah_mare_bello_fiore
 			}
@@ -5494,6 +5792,8 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_political_advisor_tt
+			custom_effect_tooltip = ah_operative_leader_tt
 			generate_character = {
 				token_base = ah_aoi_futaba
 			}
@@ -5528,6 +5828,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_gasper_vladi
 			# }
@@ -5563,6 +5864,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_ryou_akizuki
 			# }
@@ -5596,6 +5898,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_operative_leader_tt
 			# generate_character = {
 			# 	token_base = ah_saki_mizushima
 			# }
@@ -5629,6 +5932,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_anri_sogahara
 			}
@@ -5649,6 +5953,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_homare_nao
 			}
@@ -5669,6 +5974,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_kaname
 			}
@@ -5689,6 +5995,7 @@ ah_take_traps_category = {
 			}
 		}
 		complete_effect = {
+			custom_effect_tooltip = ah_corps_commander_tt
 			generate_character = {
 				token_base = ah_hayato_juumonji
 			}

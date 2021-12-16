@@ -11,6 +11,30 @@
  ah_androids_ban:0 "Никаких андроидов"
  ah_girls_ban:0 "Никаких девушек"
  ah_harem_limit_tt:0 "Наложниц в гареме меньше §G[?ah_harem_limit]§!"
+ ah_change_leader_to_anastasia_romanova:0 "Назначить  §GАнастасию Романову§! лидером"
+ ah_change_leader_to_histoire:0 "Назначить  §GИстуар§! лидером"
+ ah_change_leader_to_velvet_crowe:0 "Назначить  §GВельвет Крау§! лидером"
+ ah_change_leader_to_astolfo:0 "Назначить  §GАстольфо§! лидером"
+ ah_harem_size_for_change_leader_tt:0 "Размер гарема не менее §G20§!"
+ ah_anastasia_romanova_taked_tt:0 "§BАнастасия Романова§!"
+ ah_histoire_taked_tt:0 "§BИстуар§!"
+ ah_velvet_crowe_taked_tt:0 "§GВельвет Крау§!"
+ ah_astolfo_taked_tt:0 "§BАстольф§!"
+
+#ideas
+ ah_harem:0 "§BГарем§!"
+
+#tooltips
+ ah_political_advisor_tt:0 "§YПолитик§!"
+ ah_theorist_tt:0 "§OТеоретик§!"
+ ah_navy_chief_tt:0 "§BГлавком ВМС§!"
+ ah_air_chief_tt:0 "§LГлавком ВВС§!"
+ ah_army_chief_tt:0 "§GГлавком Армии§!"
+ ah_high_command_tt:0 "§YВысшее командование§!"
+ ah_corps_commander_tt:0 "§GГенерал§!"
+ ah_navy_leader_tt:0 "§BАдмирал§!"
+ ah_operative_leader_tt:0 "§RАгент§!"
+ 
 
 #ah_take_girls_category
  ah_take_girls_category:0 "Девушки"
@@ -158,6 +182,12 @@
  ah_take_mako_mitsuki:0 "§RМако Митсуки§!"
  ah_take_yuriya_komiya:0 "§RЮрия Комия§!"
  ah_take_prinz_eugen:0 "§BПринц О́йген§!"
+ ah_take_charlotte_dunois:0 "§GШарлотта Дюнуа§!"
+ ah_take_erica_blandelli:0 "§GЭрика Бланделли§!"
+ ah_take_miki_hoshii:0 "§GМики Хосии§!"
+ ah_take_irina_jelavic:0 "§GИрина Елавич§!"
+ ah_take_alisa_illinichina_amiella:0 "§GАлиса Ильинична Амелла§!"
+ ah_take_kei:0 "§GКей§!"
 
 #ah_take_androids_category
  ah_take_androids_category:0 "Девушки андроиды"
@@ -199,6 +229,8 @@
  ah_take_vanessa_diodati:0 "§RВанесса Диодати§!"
  ah_take_ashigara_arp:0 "§BАшигара§!"
  ah_take_mei_fang:0 "§GМэй-Фанг§!"
+ ah_take_haruna:0 "§BХаруна§!"
+ ah_take_kirishima:0 "§BКиришима§!"
 
 #ah_take_monsters_category
  ah_take_monsters_category:0 "Девушки монстры"
