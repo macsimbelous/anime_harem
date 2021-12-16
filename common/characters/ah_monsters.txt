@@ -631,7 +631,7 @@ characters = {
 			ledger = navy
 			cost = 50
 			traits = {
-				naval_theorist
+				grand_fleet_proponent
 			}
 		}
 		navy_leader = {

@@ -710,13 +710,13 @@ characters = {
 		}
 		corps_commander = {
 			traits = {
-				commando
+				commando adaptable brilliant_strategist
 			}
-			skill = 1
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
 			legacy_id = -1
 		}
 	}
