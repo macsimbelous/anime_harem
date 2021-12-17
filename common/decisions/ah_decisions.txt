@@ -80,7 +80,7 @@ ah_harem_category = {
 					ideology = despotism
 					expire = "1959.12.23.1"
 					traits = {
-						underage_monarch
+						#underage_monarch
 						legitimate_heir
 						autocratic_imperialist
 						popular_queen
@@ -3027,7 +3027,7 @@ ah_take_girls_category = {
 			# }
 			create_operative_leader = {
 				name = "Hitomi Tsukishiro"
-				GFX = GFX_Hitomi_Tsukishiro
+				GFX = GFX_hitomi_tsukishiro
 				bypass_recruitment = no
 				available_to_spy_master = yes
 				female = yes
